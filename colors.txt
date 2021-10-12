@@ -1,0 +1,15 @@
+Light:
+Primary: #fafafa
+P - Light: #ffffff
+P - Dark: #c7c7c7
+
+Secondary: #bcbcbc
+S - Light: #eeeeee
+S - Dark: #8c8c8c
+
+Text on P & S: #000000
+
+Dark:
+Background: #121212
+Primary: #000000
+Secondary 
