@@ -1,61 +1,38 @@
 /* Sample:
-const customrecoveryName = "";
-const customrecoveryRating = N;
-const customrecoveryWebsite = "";
-const customrecoveryDevices = "";
-const customrecoverySourceCode = "";
+const CustomRecovery = ["Custom Recovery Name", Rating Number, "Website Link", "Devices Link", "Source Code Link"]
+document.getElementById("customrecovery_name").textContent = CustomRecovery[0];
+document.getElementById("customrecovery_rating").textContent = CustomRecovery[1];
+document.getElementById("customrecovery_website").setAttribute("href", CustomRecovery[2]);
+document.getElementById("customrecovery_devices").setAttribute("href", CustomRecovery[3]);
+document.getElementById("customrecovery_sourcecode").setAttribute("href", CustomRecovery[4]);
 
-document.getElementById("customrecovery_name").textContent = customrecoveryName;
-document.getElementById("customrecovery_rating").textContent = customrecoveryRating;
-document.getElementById("customrecovery_website").setAttribute("href", customrecoveryWebsite);
-document.getElementById("customrecovery_devices").setAttribute("href", customrecoveryDevices);
-document.getElementById("customrecovery_sourcecode").setAttribute("href", customrecoverySourceCode);
+Read Wiki on Github to view in more detail (the meaning of everything and etc) or do it according to the ones below.
 */
 
-const twrpName = "TWRP";
-const twrpRating = 10;
-const twrpWebsite = "https://twrp.me/";
-const twrpDevices = "https://twrp.me/Devices/";
-const twrpSourceCode = "https://github.com/TeamWin";
+const TWRP = ["TWRP", 10, "https://twrp.me/", "https://twrp.me/Devices/", "https://github.com/TeamWin"]
+document.getElementById("twrp_name").textContent = TWRP[0];
+document.getElementById("twrp_rating").textContent = TWRP[1];
+document.getElementById("twrp_website").setAttribute("href", TWRP[2]);
+document.getElementById("twrp_devices").setAttribute("href", TWRP[3]);
+document.getElementById("twrp_sourcecode").setAttribute("href", TWRP[4]);
 
-document.getElementById("twrp_name").textContent = twrpName;
-document.getElementById("twrp_rating").textContent = twrpRating;
-document.getElementById("twrp_website").setAttribute("href", twrpWebsite);
-document.getElementById("twrp_devices").setAttribute("href", twrpDevices);
-document.getElementById("twrp_sourcecode").setAttribute("href", twrpSourceCode);
+const SkyHawk = ["SkyHawk", 10, "https://skyhawkrecovery.github.io/", "https://sourceforge.net/projects/shrp/files/", "https://github.com/SHRP"]
+document.getElementById("skyhawk_name").textContent = SkyHawk[0];
+document.getElementById("skyhawk_rating").textContent = SkyHawk[1];
+document.getElementById("skyhawk_website").setAttribute("href", SkyHawk[2]);
+document.getElementById("skyhawk_devices").setAttribute("href", SkyHawk[3]);
+document.getElementById("skyhawk_sourcecode").setAttribute("href", SkyHawk[4]);
 
-const skyhawkName = "Skyhawk";
-const skyhawkRating = 10;
-const skyhawkWebsite = "https://skyhawkrecovery.github.io/";
-const skyhawkDevices = "https://sourceforge.net/projects/shrp/files/";
-const skyhawkSourceCode = "https://github.com/SHRP";
+const OrangeFox = ["OrangeFox", 9.5, "https://orangefox.download/", "https://orangefox.download/", "https://gitlab.com/OrangeFox/infrastructure/dsite"]
+document.getElementById("orangefox_name").textContent = OrangeFox[0];
+document.getElementById("orangefox_rating").textContent = OrangeFox[1];
+document.getElementById("orangefox_website").setAttribute("href", OrangeFox[2]);
+document.getElementById("orangefox_devices").setAttribute("href", OrangeFox[3]);
+document.getElementById("orangefox_sourcecode").setAttribute("href", OrangeFox[4]);
 
-document.getElementById("skyhawk_name").textContent = skyhawkName;
-document.getElementById("skyhawk_rating").textContent = skyhawkRating;
-document.getElementById("skyhawk_website").setAttribute("href", skyhawkWebsite);
-document.getElementById("skyhawk_devices").setAttribute("href", skyhawkDevices);
-document.getElementById("skyhawk_sourcecode").setAttribute("href", skyhawkSourceCode);
-
-const orangefoxName = "Orangefox";
-const orangefoxRating = 9.5;
-const orangefoxWebsite = "https://orangefox.download/";
-const orangefoxDevices = "https://orangefox.download/";
-const orangefoxSourceCode = "https://gitlab.com/OrangeFox/infrastructure/dsite";
-
-document.getElementById("orangefox_name").textContent = orangefoxName;
-document.getElementById("orangefox_rating").textContent = orangefoxRating;
-document.getElementById("orangefox_website").setAttribute("href", orangefoxWebsite);
-document.getElementById("orangefox_devices").setAttribute("href", orangefoxDevices);
-document.getElementById("orangefox_sourcecode").setAttribute("href", orangefoxSourceCode);
-
-const pterodonName = "Pterodon";
-const pterodonRating = 1;
-const pterodonWebsite = "https://github.com/PterodonRecovery";
-const pterodonDevices = "https://github.com/PterodonRecovery";
-const pterodonSourceCode = "https://github.com/PterodonRecovery";
-
-document.getElementById("pterodon_name").textContent = pterodonName;
-document.getElementById("pterodon_rating").textContent = pterodonRating;
-document.getElementById("pterodon_website").setAttribute("href", pterodonWebsite);
-document.getElementById("pterodon_devices").setAttribute("href", pterodonDevices);
-document.getElementById("pterodon_sourcecode").setAttribute("href", pterodonSourceCode);
+const Pterodon = ["Pterodon", 1, "https://github.com/PterodonRecovery", "https://github.com/PterodonRecovery", "https://github.com/PterodonRecovery"]
+document.getElementById("pterodon_name").textContent = Pterodon[0];
+document.getElementById("pterodon_rating").textContent = Pterodon[1];
+document.getElementById("pterodon_website").setAttribute("href", Pterodon[2]);
+document.getElementById("pterodon_devices").setAttribute("href", Pterodon[3]);
+document.getElementById("pterodon_sourcecode").setAttribute("href", Pterodon[4]);
