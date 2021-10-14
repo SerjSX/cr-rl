@@ -92,3 +92,73 @@ document.getElementById("carbonrom_rating").textContent = CarbonROM[1];
 document.getElementById("carbonrom_website").setAttribute("href", CarbonROM[2]);
 document.getElementById("carbonrom_devices").setAttribute("href", CarbonROM[3]);
 document.getElementById("carbonrom_sourcecode").setAttribute("href", CarbonROM[4]);
+
+const AOSPExtended = ["AOSP Extended", "NA", "https://aospextended.com/", "https://downloads.aospextended.com/", "https://github.com/AospExtended"]
+document.getElementById("aospextended_name").textContent = AOSPExtended[0];
+document.getElementById("aospextended_rating").textContent = AOSPExtended[1];
+document.getElementById("aospextended_website").setAttribute("href", AOSPExtended[2]);
+document.getElementById("aospextended_devices").setAttribute("href", AOSPExtended[3]);
+document.getElementById("aospextended_sourcecode").setAttribute("href", AOSPExtended[4]);
+
+const PixelExtended = ["Pixel Extended", "NA", "https://pixelextended.ninja", "https://sourceforge.net/projects/pixelextended/files/", "https://github.com/PixelExtended"]
+document.getElementById("pixelextended_name").textContent = PixelExtended[0];
+document.getElementById("pixelextended_rating").textContent = PixelExtended[1];
+document.getElementById("pixelextended_website").setAttribute("href", PixelExtended[2]);
+document.getElementById("pixelextended_devices").setAttribute("href", PixelExtended[3]);
+document.getElementById("pixelextended_sourcecode").setAttribute("href", PixelExtended[4]);
+
+const HavocOS = ["HavocOS", "NA", "https://havoc-os.com/", "https://havoc-os.com/download", "https://github.com/Havoc-OS"]
+document.getElementById("havocos_name").textContent = HavocOS[0];
+document.getElementById("havocos_rating").textContent = HavocOS[1];
+document.getElementById("havocos_website").setAttribute("href", HavocOS[2]);
+document.getElementById("havocos_devices").setAttribute("href", HavocOS[3]);
+document.getElementById("havocos_sourcecode").setAttribute("href", HavocOS[4]);
+
+const InfinityOS = ["InfinityOS", "NA", "https://github.com/Infinity-OS", "https://sourceforge.net/projects/infinityosrom/files/", "https://github.com/Infinity-OS"]
+document.getElementById("infinityos_name").textContent = InfinityOS[0];
+document.getElementById("infinityos_rating").textContent = InfinityOS[1];
+document.getElementById("infinityos_website").setAttribute("href", InfinityOS[2]);
+document.getElementById("infinityos_devices").setAttribute("href", InfinityOS[3]);
+document.getElementById("infinityos_sourcecode").setAttribute("href", InfinityOS[4]);
+
+const ProtonAOSP = ["ProtonAOSP", "NA", "https://protonaosp.kdrag0n.dev/", "https://protonaosp.kdrag0n.dev/getting-started/supported-devices", "https://github.com/ProtonAOSP"]
+document.getElementById("protonaosp_name").textContent = ProtonAOSP[0];
+document.getElementById("protonaosp_rating").textContent = ProtonAOSP[1];
+document.getElementById("protonaosp_website").setAttribute("href", ProtonAOSP[2]);
+document.getElementById("protonaosp_devices").setAttribute("href", ProtonAOSP[3]);
+document.getElementById("protonaosp_sourcecode").setAttribute("href", ProtonAOSP[4]);
+
+const CipherOS = ["CipherOS", "NA", "https://cipheros.github.io/", "https://cipheros.github.io/Downloads/", "https://github.com/CipherOS"]
+document.getElementById("cipheros_name").textContent = CipherOS[0];
+document.getElementById("cipheros_rating").textContent = CipherOS[1];
+document.getElementById("cipheros_website").setAttribute("href", CipherOS[2]);
+document.getElementById("cipheros_devices").setAttribute("href", CipherOS[3]);
+document.getElementById("cipheros_sourcecode").setAttribute("href", CipherOS[4]);
+
+const ProjectSakura = ["Project Sakura", "NA", "https://projectsakura.xyz/", "https://projectsakura.xyz/download/", "https://github.com/ProjectSakura"]
+document.getElementById("projectsakura_name").textContent = ProjectSakura[0];
+document.getElementById("projectsakura_rating").textContent = ProjectSakura[1];
+document.getElementById("projectsakura_website").setAttribute("href", ProjectSakura[2]);
+document.getElementById("projectsakura_devices").setAttribute("href", ProjectSakura[3]);
+document.getElementById("projectsakura_sourcecode").setAttribute("href", ProjectSakura[4]);
+
+const ProjectFluid = ["Project Fluid", "NA", "https://projectfluid.org/", "https://projectfluid.org/downloads.html", "https://github.com/Project-Fluid"]
+document.getElementById("projectfluid_name").textContent = ProjectFluid[0];
+document.getElementById("projectfluid_rating").textContent = ProjectFluid[1];
+document.getElementById("projectfluid_website").setAttribute("href", ProjectFluid[2]);
+document.getElementById("projectfluid_devices").setAttribute("href", ProjectFluid[3]);
+document.getElementById("projectfluid_sourcecode").setAttribute("href", ProjectFluid[4]);
+
+const MSMExtended = ["MSM Extended", "NA", "https://project-xtended.org/", "https://downloads.project-xtended.org/", "https://github.com/Project-Xtended"]
+document.getElementById("msmextended_name").textContent = MSMExtended[0];
+document.getElementById("msmextended_rating").textContent = MSMExtended[1];
+document.getElementById("msmextended_website").setAttribute("href", MSMExtended[2]);
+document.getElementById("msmextended_devices").setAttribute("href", MSMExtended[3]);
+document.getElementById("msmextended_sourcecode").setAttribute("href", MSMExtended[4]);
+
+const AOSPK = ["AOSPK", "NA", "https://aospk.org/", "https://download.aospk.org/", "https://github.com/AOSPK"]
+document.getElementById("aospk_name").textContent = AOSPK[0];
+document.getElementById("aospk_rating").textContent = AOSPK[1];
+document.getElementById("aospk_website").setAttribute("href", AOSPK[2]);
+document.getElementById("aospk_devices").setAttribute("href", AOSPK[3]);
+document.getElementById("aospk_sourcecode").setAttribute("href", AOSPK[4]);

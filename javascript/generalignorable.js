@@ -1,5 +1,6 @@
 const customromButton = document.getElementById("custom-rom-button");
 const customromTable = document.getElementById("custom-rom-table");
+const bottomInfo = document.getElementById("bottom-info-js");
 customromButton.addEventListener("click", customromOpen);
 
 function customromOpen() {
@@ -8,6 +9,7 @@ function customromOpen() {
     customrecoveryTable.classList.add("hide");
     customromButton.classList.add("buttononclick");
     customrecoveryButton.classList.remove("buttononclick");
+    bottomInfo.classList.add("hide");
     window.setTimeout(customromOpen2, 100);
 }
 
@@ -15,6 +17,7 @@ function customromOpen2() {
     customromTable.classList.add("show");
     customrecoveryTable.classList.remove("add");
     customrecoveryTable.classList.add("remove");
+    bottomInfo.classList.add("remove");
 }
 
 const customrecoveryButton = document.getElementById("custom-recovery-button");
@@ -27,6 +30,7 @@ function customrecoveryOpen() {
     customromTable.classList.add("hide");
     customrecoveryButton.classList.add("buttononclick");
     customromButton.classList.remove("buttononclick");
+    bottomInfo.classList.add("hide");
     window.setTimeout(customrecoveryOpen2, 100);
 }
 
@@ -34,6 +38,7 @@ function customrecoveryOpen2() {
     customrecoveryTable.classList.add("show");
     customromTable.classList.remove("add");
     customromTable.classList.add("remove");
+    bottomInfo.classList.add("remove");
 }
 
 const themebutton = document.getElementById("theme-img-js");
@@ -60,6 +65,7 @@ function changeTheme() {
         customrecoveryButton.classList.add("darkbuttonlight");
         customromTable.style.color = "#ffffff";
         customrecoveryTable.style.color = "#ffffff";
+        bottomInfo.style.color = "#e4d7d7";
         themeState = "dark";
     } else if (themeState === "dark") {
         pageBackground.style.backgroundColor = "#ffffff";
@@ -75,6 +81,7 @@ function changeTheme() {
         customrecoveryButton.classList.remove("darkbuttonlight");
         customromTable.style.color = "black";
         customrecoveryTable.style.color = "black";
+        bottomInfo.style.color = "#black";
         themeState = "light";
     }
 }

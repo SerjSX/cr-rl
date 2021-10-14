@@ -167,6 +167,23 @@ a:hover {
     padding-top: 8px;
 }
 
+.bottom-info {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0px;
+    background-color: #bcbcbc6b;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius:10px;
+}
+
+.bottom-text {
+    font-size: 12px;
+    padding: 5px;
+}
+
 /* XXX Small screens (320px and up) */
 @media only screen and (min-width: 320px) {
     .toptext {
