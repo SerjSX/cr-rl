@@ -162,3 +162,73 @@ document.getElementById("aospk_rating").textContent = AOSPK[1];
 document.getElementById("aospk_website").setAttribute("href", AOSPK[2]);
 document.getElementById("aospk_devices").setAttribute("href", AOSPK[3]);
 document.getElementById("aospk_sourcecode").setAttribute("href", AOSPK[4]);
+
+const TheStyxProject = ["TheStyxProject", "NA", "https://styxproject.ml/", "https://sourceforge.net/projects/styx-os/files/Athena/", "https://github.com/StyxProject"]
+document.getElementById("thestyxproject_name").textContent = TheStyxProject[0];
+document.getElementById("thestyxproject_rating").textContent = TheStyxProject[1];
+document.getElementById("thestyxproject_website").setAttribute("href", TheStyxProject[2]);
+document.getElementById("thestyxproject_devices").setAttribute("href", TheStyxProject[3]);
+document.getElementById("thestyxproject_sourcecode").setAttribute("href", TheStyxProject[4]);
+
+const BaikalOS = ["BaikalOS", "NA", "https://baikalos.ru/", "https://dl.baikalos.ru/", "https://github.com/baikalos/"]
+document.getElementById("baikalos_name").textContent = BaikalOS[0];
+document.getElementById("baikalos_rating").textContent = BaikalOS[1];
+document.getElementById("baikalos_website").setAttribute("href", BaikalOS[2]);
+document.getElementById("baikalos_devices").setAttribute("href", BaikalOS[3]);
+document.getElementById("baikalos_sourcecode").setAttribute("href", BaikalOS[4]);
+
+const OctaviOS = ["OctaviOS", "NA", "http://www.octavi-os.com/", "https://octavi-os.com/downloads", "https://github.com/Octavi-OS"]
+document.getElementById("octavios_name").textContent = OctaviOS[0];
+document.getElementById("octavios_rating").textContent = OctaviOS[1];
+document.getElementById("octavios_website").setAttribute("href", OctaviOS[2]);
+document.getElementById("octavios_devices").setAttribute("href", OctaviOS[3]);
+document.getElementById("octavios_sourcecode").setAttribute("href", OctaviOS[4]);
+
+const StagOS = ["StagOS", "NA", "https://stag-os.org/", "https://downloads.stag-os.org/", "https://github.com/StagOS"]
+document.getElementById("stagos_name").textContent = StagOS[0];
+document.getElementById("stagos_rating").textContent = StagOS[1];
+document.getElementById("stagos_website").setAttribute("href", StagOS[2]);
+document.getElementById("stagos_devices").setAttribute("href", StagOS[3]);
+document.getElementById("stagos_sourcecode").setAttribute("href", StagOS[4]);
+
+const KangOS = ["KangOS", "NA", "https://kangos.in/", "https://try.kangos.in/download_kangos/", "https://github.com/Kang-OS-R"]
+document.getElementById("kangos_name").textContent = KangOS[0];
+document.getElementById("kangos_rating").textContent = KangOS[1];
+document.getElementById("kangos_website").setAttribute("href", KangOS[2]);
+document.getElementById("kangos_devices").setAttribute("href", KangOS[3]);
+document.getElementById("kangos_sourcecode").setAttribute("href", KangOS[4]);
+
+const SparkOS = ["SparkOS", "NA", "https://www.spark-os.live/", "https://downloads.spark-os.live/", "https://github.com/Spark-Rom"]
+document.getElementById("sparkos_name").textContent = SparkOS[0];
+document.getElementById("sparkos_rating").textContent = SparkOS[1];
+document.getElementById("sparkos_website").setAttribute("href", SparkOS[2]);
+document.getElementById("sparkos_devices").setAttribute("href", SparkOS[3]);
+document.getElementById("sparkos_sourcecode").setAttribute("href", SparkOS[4]);
+
+const CelsiumOS = ["CelsiumOS", "NA", "https://cesiumos.xyz/", "https://cesiumos.xyz/devices/", "https://github.com/CesiumOS-org"]
+document.getElementById("celsiumos_name").textContent = CelsiumOS[0];
+document.getElementById("celsiumos_rating").textContent = CelsiumOS[1];
+document.getElementById("celsiumos_website").setAttribute("href", CelsiumOS[2]);
+document.getElementById("celsiumos_devices").setAttribute("href", CelsiumOS[3]);
+document.getElementById("celsiumos_sourcecode").setAttribute("href", CelsiumOS[4]);
+
+const SpiceOS = ["SpiceOS", "NA", "https://github.com/SpiceOS", "https://sourceforge.net/projects/spiceos/files/", "https://github.com/SpiceOS"]
+document.getElementById("spiceos_name").textContent = SpiceOS[0];
+document.getElementById("spiceos_rating").textContent = SpiceOS[1];
+document.getElementById("spiceos_website").setAttribute("href", SpiceOS[2]);
+document.getElementById("spiceos_devices").setAttribute("href", SpiceOS[3]);
+document.getElementById("spiceos_sourcecode").setAttribute("href", SpiceOS[4]);
+
+const AOSIP = ["AOSIP", "NA", "http://aosip.weebly.com/", "https://aosip.dev/", "https://github.com/AOSiP"]
+document.getElementById("aosip_name").textContent = AOSIP[0];
+document.getElementById("aosip_rating").textContent = AOSIP[1];
+document.getElementById("aosip_website").setAttribute("href", AOSIP[2]);
+document.getElementById("aosip_devices").setAttribute("href", AOSIP[3]);
+document.getElementById("aosip_sourcecode").setAttribute("href", AOSIP[4]);
+
+const MoKee = ["MoKee Open Source Project", "NA", "https://www.mokeedev.com/en/", "https://download.mokeedev.com/", "https://github.com/MoKee"]
+document.getElementById("mokee_name").textContent = MoKee[0];
+document.getElementById("mokee_rating").textContent = MoKee[1];
+document.getElementById("mokee_website").setAttribute("href", MoKee[2]);
+document.getElementById("mokee_devices").setAttribute("href", MoKee[3]);
+document.getElementById("mokee_sourcecode").setAttribute("href", MoKee[4]);
