@@ -232,3 +232,73 @@ document.getElementById("mokee_rating").textContent = MoKee[1];
 document.getElementById("mokee_website").setAttribute("href", MoKee[2]);
 document.getElementById("mokee_devices").setAttribute("href", MoKee[3]);
 document.getElementById("mokee_sourcecode").setAttribute("href", MoKee[4]);
+
+const crDroid = ["crDroid", "NA", "https://crdroid.net/", "https://crdroid.net/dl.php", "https://github.com/crdroidandroid"]
+document.getElementById("crdroid_name").textContent = crDroid[0];
+document.getElementById("crdroid_rating").textContent = crDroid[1];
+document.getElementById("crdroid_website").setAttribute("href", crDroid[2]);
+document.getElementById("crdroid_devices").setAttribute("href", crDroid[3]);
+document.getElementById("crdroid_sourcecode").setAttribute("href", crDroid[4]);
+
+const PPUI = ["Pixel Plus UI", "NA", "https://ppui.site/home", "https://ppui.site/download", "https://github.com/PixelPlusUI-Elle"]
+document.getElementById("ppui_name").textContent = PPUI[0];
+document.getElementById("ppui_rating").textContent = PPUI[1];
+document.getElementById("ppui_website").setAttribute("href", PPUI[2]);
+document.getElementById("ppui_devices").setAttribute("href", PPUI[3]);
+document.getElementById("ppui_sourcecode").setAttribute("href", PPUI[4]);
+
+const LegionOS = ["LegionOS", "NA", "https://legionos.org/", "https://legionos.org/download/", "https://github.com/Project-LegionOS"]
+document.getElementById("legionos_name").textContent = LegionOS[0];
+document.getElementById("legionos_rating").textContent = LegionOS[1];
+document.getElementById("legionos_website").setAttribute("href", LegionOS[2]);
+document.getElementById("legionos_devices").setAttribute("href", LegionOS[3]);
+document.getElementById("legionos_sourcecode").setAttribute("href", LegionOS[4]);
+
+const PixysOS = ["PixysOS", "NA", "https://pixysos.com/", "https://pixysos.com/devices", "https://github.com/PixysOS"]
+document.getElementById("pixysos_name").textContent = PixysOS[0];
+document.getElementById("pixysos_rating").textContent = PixysOS[1];
+document.getElementById("pixysos_website").setAttribute("href", PixysOS[2]);
+document.getElementById("pixysos_devices").setAttribute("href", PixysOS[3]);
+document.getElementById("pixysos_sourcecode").setAttribute("href", PixysOS[4]);
+
+const AncientOS = ["AncientOS", "NA", "http://www.ancientrom.tech/", "http://www.ancientrom.tech/downloads.html", "https://github.com/Ancient-Lab"]
+document.getElementById("ancientos_name").textContent = AncientOS[0];
+document.getElementById("ancientos_rating").textContent = AncientOS[1];
+document.getElementById("ancientos_website").setAttribute("href", AncientOS[2]);
+document.getElementById("ancientos_devices").setAttribute("href", AncientOS[3]);
+document.getElementById("ancientos_sourcecode").setAttribute("href", AncientOS[4]);
+
+const AICP = ["AICP", "NA", "https://www.aicp-rom.com/", "https://dwnld.aicp-rom.com/", "https://github.com/AICP/"]
+document.getElementById("aicp_name").textContent = AICP[0];
+document.getElementById("aicp_rating").textContent = AICP[1];
+document.getElementById("aicp_website").setAttribute("href", AICP[2]);
+document.getElementById("aicp_devices").setAttribute("href", AICP[3]);
+document.getElementById("aicp_sourcecode").setAttribute("href", AICP[4]);
+
+const SyberiaProject = ["Syberia Project", "NA", "https://syberiaos.com/", "https://syberiaos.com/downloads", "https://github.com/syberia-project"]
+document.getElementById("syberiaproject_name").textContent = SyberiaProject[0];
+document.getElementById("syberiaproject_rating").textContent = SyberiaProject[1];
+document.getElementById("syberiaproject_website").setAttribute("href", SyberiaProject[2]);
+document.getElementById("syberiaproject_devices").setAttribute("href", SyberiaProject[3]);
+document.getElementById("syberiaproject_sourcecode").setAttribute("href", SyberiaProject[4]);
+
+const RevengeOS = ["RevengeOS", "NA", "https://revengeos.com/", "https://download.revengeos.com/", "https://github.com/revengeos"]
+document.getElementById("revengeos_name").textContent = RevengeOS[0];
+document.getElementById("revengeos_rating").textContent = RevengeOS[1];
+document.getElementById("revengeos_website").setAttribute("href", RevengeOS[2]);
+document.getElementById("revengeos_devices").setAttribute("href", RevengeOS[3]);
+document.getElementById("revengeos_sourcecode").setAttribute("href", RevengeOS[4]);
+
+const ColtOS = ["ColtOS", "NA", "https://github.com/Colt-Enigma", "https://sourceforge.net/projects/coltos/files/", "https://github.com/Colt-Enigma"]
+document.getElementById("coltos_name").textContent = ColtOS[0];
+document.getElementById("coltos_rating").textContent = ColtOS[1];
+document.getElementById("coltos_website").setAttribute("href", ColtOS[2]);
+document.getElementById("coltos_devices").setAttribute("href", ColtOS[3]);
+document.getElementById("coltos_sourcecode").setAttribute("href", ColtOS[4]);
+
+const PotatoProject = ["Potato Open Sauce Project", "NA", "https://potatoproject.co/", "https://potatoproject.co/devices", "https://github.com/PotatoProject"]
+document.getElementById("potatoproject_name").textContent = PotatoProject[0];
+document.getElementById("potatoproject_rating").textContent = PotatoProject[1];
+document.getElementById("potatoproject_website").setAttribute("href", PotatoProject[2]);
+document.getElementById("potatoproject_devices").setAttribute("href", PotatoProject[3]);
+document.getElementById("potatoproject_sourcecode").setAttribute("href", PotatoProject[4]);
