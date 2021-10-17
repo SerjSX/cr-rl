@@ -30,6 +30,13 @@ document.getElementById("orangefox_website").setAttribute("href", OrangeFox[2]);
 document.getElementById("orangefox_devices").setAttribute("href", OrangeFox[3]);
 document.getElementById("orangefox_sourcecode").setAttribute("href", OrangeFox[4]);
 
+const LineageOSRecovery = ["LineageOS Recovery", 1.5, "https://lineageos.org/", "https://wiki.lineageos.org/devices/", "https://github.com/lineageos"]
+document.getElementById("lineageosrecovery_name").textContent = LineageOSRecovery[0];
+document.getElementById("lineageosrecovery_rating").textContent = LineageOSRecovery[1];
+document.getElementById("lineageosrecovery_website").setAttribute("href", LineageOSRecovery[2]);
+document.getElementById("lineageosrecovery_devices").setAttribute("href", LineageOSRecovery[3]);
+document.getElementById("lineageosrecovery_sourcecode").setAttribute("href", LineageOSRecovery[4]);
+
 const Pterodon = ["Pterodon", 1, "https://github.com/PterodonRecovery", "https://github.com/PterodonRecovery", "https://github.com/PterodonRecovery"]
 document.getElementById("pterodon_name").textContent = Pterodon[0];
 document.getElementById("pterodon_rating").textContent = Pterodon[1];

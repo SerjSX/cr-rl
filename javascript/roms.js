@@ -302,3 +302,74 @@ document.getElementById("potatoproject_rating").textContent = PotatoProject[1];
 document.getElementById("potatoproject_website").setAttribute("href", PotatoProject[2]);
 document.getElementById("potatoproject_devices").setAttribute("href", PotatoProject[3]);
 document.getElementById("potatoproject_sourcecode").setAttribute("href", PotatoProject[4]);
+
+const CorvusOS = ["CorvusOS", "NA", "https://www.corvusrom.com/", "https://www.corvusrom.com/download.html", "https://github.com/Corvus-ROM"]
+document.getElementById("corvusos_name").textContent = CorvusOS[0];
+document.getElementById("corvusos_rating").textContent = CorvusOS[1];
+document.getElementById("corvusos_website").setAttribute("href", CorvusOS[2]);
+document.getElementById("corvusos_devices").setAttribute("href", CorvusOS[3]);
+document.getElementById("corvusos_sourcecode").setAttribute("href", CorvusOS[4]);
+
+const CherishOS = ["CherishOS", "NA", "https://cherishos.com/", "https://downloads.cherishos.com/", "https://github.com/CherishOS"]
+document.getElementById("cherishos_name").textContent = CherishOS[0];
+document.getElementById("cherishos_rating").textContent = CherishOS[1];
+document.getElementById("cherishos_website").setAttribute("href", CherishOS[2]);
+document.getElementById("cherishos_devices").setAttribute("href", CherishOS[3]);
+document.getElementById("cherishos_sourcecode").setAttribute("href", CherishOS[4]);
+
+const PalladiumOS = ["PalladiumOS", "NA", "https://palladiumos.com/", "https://palladiumos.com/download", "https://github.com/Palladium-OS"]
+document.getElementById("palladiumos_name").textContent = PalladiumOS[0];
+document.getElementById("palladiumos_rating").textContent = PalladiumOS[1];
+document.getElementById("palladiumos_website").setAttribute("href", PalladiumOS[2]);
+document.getElementById("palladiumos_devices").setAttribute("href", PalladiumOS[3]);
+document.getElementById("palladiumos_sourcecode").setAttribute("href", PalladiumOS[4]);
+
+const KomodoOS = ["PalladiumOS", "NA", "https://komodo-os.my.id/", "https://komodo-os.my.id/downloads.html", "https://github.com/Komodo-OS-Rom"]
+document.getElementById("komodoos_name").textContent = KomodoOS[0];
+document.getElementById("komodoos_rating").textContent = KomodoOS[1];
+document.getElementById("komodoos_website").setAttribute("href", KomodoOS[2]);
+document.getElementById("komodoos_devices").setAttribute("href", KomodoOS[3]);
+document.getElementById("komodoos_sourcecode").setAttribute("href", KomodoOS[4]);
+
+const TheXperienceProject = ["The Xperience Project", "NA", "https://thexperienceproject.org/", "https://thexperienceproject.org/downloads/OTA/", "https://github.com/xperience-aosp-lollipop"]
+document.getElementById("thexperienceproject_name").textContent = TheXperienceProject[0];
+document.getElementById("thexperienceproject_rating").textContent = TheXperienceProject[1];
+document.getElementById("thexperienceproject_website").setAttribute("href", TheXperienceProject[2]);
+document.getElementById("thexperienceproject_devices").setAttribute("href", TheXperienceProject[3]);
+document.getElementById("thexperienceproject_sourcecode").setAttribute("href", TheXperienceProject[4]);
+
+const ProjectAwaken = ["Project Awaken", "NA", "https://github.com/Project-Awaken", "https://sourceforge.net/projects/project-awaken/files/", "https://github.com/Project-Awaken"]
+document.getElementById("projectawaken_name").textContent = ProjectAwaken[0];
+document.getElementById("projectawaken_rating").textContent = ProjectAwaken[1];
+document.getElementById("projectawaken_website").setAttribute("href", ProjectAwaken[2]);
+document.getElementById("projectawaken_devices").setAttribute("href", ProjectAwaken[3]);
+document.getElementById("projectawaken_sourcecode").setAttribute("href", ProjectAwaken[4]);
+
+const SuperiorOS = ["SuperiorOS", "NA", "https://superioros.org/", "https://downloads.superioros.org/", "https://github.com/SuperiorOS-Devices"]
+document.getElementById("superioros_name").textContent = SuperiorOS[0];
+document.getElementById("superioros_rating").textContent = SuperiorOS[1];
+document.getElementById("superioros_website").setAttribute("href", SuperiorOS[2]);
+document.getElementById("superioros_devices").setAttribute("href", SuperiorOS[3]);
+document.getElementById("superioros_sourcecode").setAttribute("href", SuperiorOS[4]);
+
+const FalconOS = ["FalconOS", "NA", "https://falconos.in/", "https://falconos.in/Download.html", "https://github.com/Falcon-OS"]
+document.getElementById("falconos_name").textContent = FalconOS[0];
+document.getElementById("falconos_rating").textContent = FalconOS[1];
+document.getElementById("falconos_website").setAttribute("href", FalconOS[2]);
+document.getElementById("falconos_devices").setAttribute("href", FalconOS[3]);
+document.getElementById("falconos_sourcecode").setAttribute("href", FalconOS[4]);
+
+const TenXOS = ["TenX-OS", "NA", "https://sourceforge.net/projects/tenx-os/", "https://sourceforge.net/projects/tenx-os/files/", "https://sourceforge.net/p/tenx-os/code/ref/master/"]
+document.getElementById("tenxos_name").textContent = TenXOS[0];
+document.getElementById("tenxos_rating").textContent = TenXOS[1];
+document.getElementById("tenxos_website").setAttribute("href", TenXOS[2]);
+document.getElementById("tenxos_devices").setAttribute("href", TenXOS[3]);
+document.getElementById("tenxos_sourcecode").setAttribute("href", TenXOS[4]);
+
+const HyconOS = ["HyconOS", "NA", "https://www.hyconos.in/#/", "https://www.hyconos.in/#/downloads", "https://github.com/HyconOS"]
+document.getElementById("hyconos_name").textContent = HyconOS[0];
+document.getElementById("hyconos_rating").textContent = HyconOS[1];
+document.getElementById("hyconos_website").setAttribute("href", HyconOS[2]);
+document.getElementById("hyconos_devices").setAttribute("href", HyconOS[3]);
+document.getElementById("hyconos_sourcecode").setAttribute("href", HyconOS[4]);
+
