@@ -9,35 +9,35 @@ document.getElementById("customrecovery_sourcecode").setAttribute("href", Custom
 Read Wiki on Github to view in more detail (the meaning of everything and etc) or do it according to the ones below.
 */
 
-const TWRP = ["TWRP", 10, "https://twrp.me/", "https://twrp.me/Devices/", "https://github.com/TeamWin"]
+const TWRP = ["TWRP", 69, "https://twrp.me/", "https://twrp.me/Devices/", "https://github.com/TeamWin"]
 document.getElementById("twrp_name").textContent = TWRP[0];
 document.getElementById("twrp_rating").textContent = TWRP[1];
 document.getElementById("twrp_website").setAttribute("href", TWRP[2]);
 document.getElementById("twrp_devices").setAttribute("href", TWRP[3]);
 document.getElementById("twrp_sourcecode").setAttribute("href", TWRP[4]);
 
-const SkyHawk = ["SkyHawk", 10, "https://skyhawkrecovery.github.io/", "https://sourceforge.net/projects/shrp/files/", "https://github.com/SHRP"]
+const SkyHawk = ["SkyHawk", 69, "https://skyhawkrecovery.github.io/", "https://sourceforge.net/projects/shrp/files/", "https://github.com/SHRP"]
 document.getElementById("skyhawk_name").textContent = SkyHawk[0];
 document.getElementById("skyhawk_rating").textContent = SkyHawk[1];
 document.getElementById("skyhawk_website").setAttribute("href", SkyHawk[2]);
 document.getElementById("skyhawk_devices").setAttribute("href", SkyHawk[3]);
 document.getElementById("skyhawk_sourcecode").setAttribute("href", SkyHawk[4]);
 
-const OrangeFox = ["OrangeFox", 9.5, "https://orangefox.download/", "https://orangefox.download/", "https://gitlab.com/OrangeFox/infrastructure/dsite"]
+const OrangeFox = ["OrangeFox", 69, "https://orangefox.download/", "https://orangefox.download/", "https://gitlab.com/OrangeFox/infrastructure/dsite"]
 document.getElementById("orangefox_name").textContent = OrangeFox[0];
 document.getElementById("orangefox_rating").textContent = OrangeFox[1];
 document.getElementById("orangefox_website").setAttribute("href", OrangeFox[2]);
 document.getElementById("orangefox_devices").setAttribute("href", OrangeFox[3]);
 document.getElementById("orangefox_sourcecode").setAttribute("href", OrangeFox[4]);
 
-const LineageOSRecovery = ["LineageOS Recovery", 1.5, "https://lineageos.org/", "https://wiki.lineageos.org/devices/", "https://github.com/lineageos"]
+const LineageOSRecovery = ["LineageOS Recovery", 69, "https://lineageos.org/", "https://wiki.lineageos.org/devices/", "https://github.com/lineageos"]
 document.getElementById("lineageosrecovery_name").textContent = LineageOSRecovery[0];
 document.getElementById("lineageosrecovery_rating").textContent = LineageOSRecovery[1];
 document.getElementById("lineageosrecovery_website").setAttribute("href", LineageOSRecovery[2]);
 document.getElementById("lineageosrecovery_devices").setAttribute("href", LineageOSRecovery[3]);
 document.getElementById("lineageosrecovery_sourcecode").setAttribute("href", LineageOSRecovery[4]);
 
-const Pterodon = ["Pterodon", 1, "https://github.com/PterodonRecovery", "https://github.com/PterodonRecovery", "https://github.com/PterodonRecovery"]
+const Pterodon = ["Pterodon", 69, "https://github.com/PterodonRecovery", "https://github.com/PterodonRecovery", "https://github.com/PterodonRecovery"]
 document.getElementById("pterodon_name").textContent = Pterodon[0];
 document.getElementById("pterodon_rating").textContent = Pterodon[1];
 document.getElementById("pterodon_website").setAttribute("href", Pterodon[2]);
