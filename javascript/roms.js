@@ -324,7 +324,7 @@ document.getElementById("palladiumos_website").setAttribute("href", PalladiumOS[
 document.getElementById("palladiumos_devices").setAttribute("href", PalladiumOS[3]);
 document.getElementById("palladiumos_sourcecode").setAttribute("href", PalladiumOS[4]);
 
-const KomodoOS = ["PalladiumOS", "NA", "https://komodo-os.my.id/", "https://komodo-os.my.id/downloads.html", "https://github.com/Komodo-OS-Rom"]
+const KomodoOS = ["KomodoOS", "NA", "https://komodo-os.my.id/", "https://komodo-os.my.id/downloads.html", "https://github.com/Komodo-OS-Rom"]
 document.getElementById("komodoos_name").textContent = KomodoOS[0];
 document.getElementById("komodoos_rating").textContent = KomodoOS[1];
 document.getElementById("komodoos_website").setAttribute("href", KomodoOS[2]);
@@ -373,3 +373,65 @@ document.getElementById("hyconos_website").setAttribute("href", HyconOS[2]);
 document.getElementById("hyconos_devices").setAttribute("href", HyconOS[3]);
 document.getElementById("hyconos_sourcecode").setAttribute("href", HyconOS[4]);
 
+const ShapeShiftOS = ["ShapeShiftOS", "NA", "https://github.com/ShapeShiftOS", "https://sourceforge.net/projects/shapeshiftos/files/", "https://github.com/ShapeShiftOS"]
+document.getElementById("shapeshiftos_name").textContent = ShapeShiftOS[0];
+document.getElementById("shapeshiftos_rating").textContent = ShapeShiftOS[1];
+document.getElementById("shapeshiftos_website").setAttribute("href", ShapeShiftOS[2]);
+document.getElementById("shapeshiftos_devices").setAttribute("href", ShapeShiftOS[3]);
+document.getElementById("shapeshiftos_sourcecode").setAttribute("href", ShapeShiftOS[4]);
+
+const RohieOS = ["RohieOS", "NA", "https://rohieos.github.io/", "https://rohieos.github.io/download.html", "https://github.com/RohieOS"]
+document.getElementById("rohieos_name").textContent = RohieOS[0];
+document.getElementById("rohieos_rating").textContent = RohieOS[1];
+document.getElementById("rohieos_website").setAttribute("href", RohieOS[2]);
+document.getElementById("rohieos_devices").setAttribute("href", RohieOS[3]);
+document.getElementById("rohieos_sourcecode").setAttribute("href", RohieOS[4]);
+
+const Project404 = ["Project 404", "NA", "https://project404.us/", "https://downloads.project404.us/", "https://github.com/P-404"]
+document.getElementById("project404_name").textContent = Project404[0];
+document.getElementById("project404_rating").textContent = Project404[1];
+document.getElementById("project404_website").setAttribute("href", Project404[2]);
+document.getElementById("project404_devices").setAttribute("href", Project404[3]);
+document.getElementById("project404_sourcecode").setAttribute("href", Project404[4]);
+
+const WaveOS = ["WaveOS", "NA", "https://github.com/Wave-Project", "https://github.com/Wave-Project", "https://github.com/Wave-Project"]
+document.getElementById("waveos_name").textContent = WaveOS[0];
+document.getElementById("waveos_rating").textContent = WaveOS[1];
+document.getElementById("waveos_website").setAttribute("href", WaveOS[2]);
+document.getElementById("waveos_devices").setAttribute("href", WaveOS[3]);
+document.getElementById("waveos_sourcecode").setAttribute("href", WaveOS[4]);
+
+const Derpfest = ["Derpfest", "NA", "https://derpfest.org/", "https://github.com/DerpFest-Devices/", "https://github.com/DerpLab"]
+document.getElementById("derpfest_name").textContent = Derpfest[0];
+document.getElementById("derpfest_rating").textContent = Derpfest[1];
+document.getElementById("derpfest_website").setAttribute("href", Derpfest[2]);
+document.getElementById("derpfest_devices").setAttribute("href", Derpfest[3]);
+document.getElementById("derpfest_sourcecode").setAttribute("href", Derpfest[4]);
+
+const YAOSP = ["Yet Another AOSP Project", "NA", "https://yaosp.dev/", "https://mirror.codebucket.de/yaap/", "https://github.com/yaap"]
+document.getElementById("yaosp_name").textContent = YAOSP[0];
+document.getElementById("yaosp_rating").textContent = YAOSP[1];
+document.getElementById("yaosp_website").setAttribute("href", YAOSP[2]);
+document.getElementById("yaosp_devices").setAttribute("href", YAOSP[3]);
+document.getElementById("yaosp_sourcecode").setAttribute("href", YAOSP[4]);
+
+const ProjectRadiant = ["Project Radiant", "NA", "https://github.com/ProjectRadiant", "https://github.com/ProjectRadiant", "https://github.com/ProjectRadiant"]
+document.getElementById("projectradiant_name").textContent = ProjectRadiant[0];
+document.getElementById("projectradiant_rating").textContent = ProjectRadiant[1];
+document.getElementById("projectradiant_website").setAttribute("href", ProjectRadiant[2]);
+document.getElementById("projectradiant_devices").setAttribute("href", ProjectRadiant[3]);
+document.getElementById("projectradiant_sourcecode").setAttribute("href", ProjectRadiant[4]);
+
+const NusantraProject = ["Nusantra Project", "NA", "https://nusantaraproject.my.id/", "https://nusantaraproject.my.id/downloads/", "https://github.com/NusantaraProject-ROM"]
+document.getElementById("nusantraproject_name").textContent = NusantraProject[0];
+document.getElementById("nusantraproject_rating").textContent = NusantraProject[1];
+document.getElementById("nusantraproject_website").setAttribute("href", NusantraProject[2]);
+document.getElementById("nusantraproject_devices").setAttribute("href", NusantraProject[3]);
+document.getElementById("nusantraproject_sourcecode").setAttribute("href", NusantraProject[4]);
+
+const Descendant = ["Descendant", "NA", "https://descendant.me/", "https://downloads.descendant.me/", "https://github.com/Descendant-xi"]
+document.getElementById("descendant_name").textContent = Descendant[0];
+document.getElementById("descendant_rating").textContent = Descendant[1];
+document.getElementById("descendant_website").setAttribute("href", Descendant[2]);
+document.getElementById("descendant_devices").setAttribute("href", Descendant[3]);
+document.getElementById("descendant_sourcecode").setAttribute("href", Descendant[4]);

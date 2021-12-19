@@ -81,7 +81,7 @@ function changeTheme() {
         customrecoveryButton.classList.remove("darkbuttonlight");
         customromTable.style.color = "black";
         customrecoveryTable.style.color = "black";
-        bottomInfo.style.color = "#black";
+        bottomInfo.style.color = "black";
         themeState = "light";
     }
 }
