@@ -1,45 +1,80 @@
 /* Sample:
-const CustomRecovery = ["Custom Recovery Name", Rating Number, "Website Link", "Devices Link", "Source Code Link"]
-document.getElementById("customrecovery_name").textContent = CustomRecovery[0];
-document.getElementById("customrecovery_rating").textContent = CustomRecovery[1];
-document.getElementById("customrecovery_website").setAttribute("href", CustomRecovery[2]);
-document.getElementById("customrecovery_devices").setAttribute("href", CustomRecovery[3]);
-document.getElementById("customrecovery_sourcecode").setAttribute("href", CustomRecovery[4]);
+Recoveries[0] is for the name of the recovery.
+Recoveries[1] is for the rating, if there isn't a rating type "NA" instead. If there is already, calculate the average.
+Recoveries[2] is for the website, if there isn't a website link just type "nolink".
+Recoveries[3] is for the supported devices website, if there isn't a website link just type "nolink".
+Recoveries[4] is for the source code link, if there isn't a website link just type "nolink".
 
-Read Wiki on Github to view in more detail (the meaning of everything and etc) or do it according to the ones below.
+Add a , and insert yours.
 */
 
-const TWRP = ["TWRP", 10, "https://twrp.me/", "https://twrp.me/Devices/", "https://github.com/TeamWin"]
-document.getElementById("twrp_name").textContent = TWRP[0];
-document.getElementById("twrp_rating").textContent = TWRP[1];
-document.getElementById("twrp_website").setAttribute("href", TWRP[2]);
-document.getElementById("twrp_devices").setAttribute("href", TWRP[3]);
-document.getElementById("twrp_sourcecode").setAttribute("href", TWRP[4]);
+const Recoveries = ["Name", "Rating", "Website", "Device List", "Source Code"]
+Recoveries[0] = ["TWRP", "SkyHawk", "OrangeFox", "LineageOS Recovery", "Pterodon"]
+Recoveries[1] = [10, 10, 9.5, 1.5, 1]
+Recoveries[2] = ["https://twrp.me/", "https://skyhawkrecovery.github.io/", "https://orangefox.download/", "https://lineageos.org/", nolink]
+Recoveries[3] = ["https://twrp.me/Devices/", "https://sourceforge.net/projects/shrp/files/", "https://orangefox.download/", "https://wiki.lineageos.org/devices/", nolink]
+Recoveries[4] = ["https://github.com/TeamWin", "https://github.com/SHRP", "https://gitlab.com/OrangeFox/infrastructure/dsite", "https://github.com/lineageos", "https://github.com/PterodonRecovery"]
 
-const SkyHawk = ["SkyHawk", 10, "https://skyhawkrecovery.github.io/", "https://sourceforge.net/projects/shrp/files/", "https://github.com/SHRP"]
-document.getElementById("skyhawk_name").textContent = SkyHawk[0];
-document.getElementById("skyhawk_rating").textContent = SkyHawk[1];
-document.getElementById("skyhawk_website").setAttribute("href", SkyHawk[2]);
-document.getElementById("skyhawk_devices").setAttribute("href", SkyHawk[3]);
-document.getElementById("skyhawk_sourcecode").setAttribute("href", SkyHawk[4]);
 
-const OrangeFox = ["OrangeFox", 9.5, "https://orangefox.download/", "https://orangefox.download/", "https://gitlab.com/OrangeFox/infrastructure/dsite"]
-document.getElementById("orangefox_name").textContent = OrangeFox[0];
-document.getElementById("orangefox_rating").textContent = OrangeFox[1];
-document.getElementById("orangefox_website").setAttribute("href", OrangeFox[2]);
-document.getElementById("orangefox_devices").setAttribute("href", OrangeFox[3]);
-document.getElementById("orangefox_sourcecode").setAttribute("href", OrangeFox[4]);
+for (let i = 0; i < Recoveries[0].length; i++) {
+    const recoveryTable = document.getElementById("custom-recovery-table");
 
-const LineageOSRecovery = ["LineageOS Recovery", 1.5, "https://lineageos.org/", "https://wiki.lineageos.org/devices/", "https://github.com/lineageos"]
-document.getElementById("lineageosrecovery_name").textContent = LineageOSRecovery[0];
-document.getElementById("lineageosrecovery_rating").textContent = LineageOSRecovery[1];
-document.getElementById("lineageosrecovery_website").setAttribute("href", LineageOSRecovery[2]);
-document.getElementById("lineageosrecovery_devices").setAttribute("href", LineageOSRecovery[3]);
-document.getElementById("lineageosrecovery_sourcecode").setAttribute("href", LineageOSRecovery[4]);
+    const recoveryName = Recoveries[0][i];
+    const recoveryRating = Recoveries[1][i];
+    const recoveryWebsite = Recoveries[2][i];
+    const recoverySupportedDevices = Recoveries[3][i];
+    const recoverySourceCode = Recoveries[4][i];
 
-const Pterodon = ["Pterodon", 1, "https://github.com/PterodonRecovery", "https://github.com/PterodonRecovery", "https://github.com/PterodonRecovery"]
-document.getElementById("pterodon_name").textContent = Pterodon[0];
-document.getElementById("pterodon_rating").textContent = Pterodon[1];
-document.getElementById("pterodon_website").setAttribute("href", Pterodon[2]);
-document.getElementById("pterodon_devices").setAttribute("href", Pterodon[3]);
-document.getElementById("pterodon_sourcecode").setAttribute("href", Pterodon[4]);
+    const createMain = document.createElement("tr");
+    recoveryTable.appendChild(createMain);
+
+    const createName = document.createElement("td");
+    createName.classList.add("table-content", "table-content-first", "table-inputs")
+    createName.setAttribute("id", recoveryName.toLowerCase() + "_name");
+    createName.textContent = recoveryName;
+    createMain.appendChild(createName);
+
+    const createRating = document.createElement("td");
+    createRating.classList.add("table-content", "table-content-middle", "table-inputs")
+    createRating.setAttribute("id", recoveryName.toLowerCase() + "_rating");
+    createRating.textContent = recoveryRating;
+    createMain.appendChild(createRating);
+
+    const createLinks = document.createElement("td");
+    createLinks.classList.add("table-content", "table-content-last", "table-inputs")
+    createMain.appendChild(createLinks);
+
+    const createLinksWebsite = document.createElement("a");
+    if (recoveryWebsite !== nolink) {
+    createLinksWebsite.setAttribute("target", "_blank");
+    }
+    createLinksWebsite.setAttribute("id", recoveryName.toLowerCase() + "_website");
+    createLinksWebsite.setAttribute("href", recoveryWebsite);
+    createLinksWebsite.textContent = "Website";
+    createLinks.appendChild(createLinksWebsite);
+
+    const createBreak1 = document.createElement("br");
+    createLinks.appendChild(createBreak1);
+
+    const createLinksDevices = document.createElement("a");
+    if (recoverySupportedDevices !== nolink) {
+    createLinksDevices.setAttribute("target", "_blank");
+    }
+    createLinksDevices.setAttribute("id", recoveryName.toLowerCase() + "_devices");
+    createLinksDevices.setAttribute("href", recoverySupportedDevices);
+    createLinksDevices.textContent = "Supported Devices";
+    createLinks.appendChild(createLinksDevices);
+
+    const createBreak2 = document.createElement("br");
+    createLinks.appendChild(createBreak2);
+
+    const createLinksSourceCode = document.createElement("a");
+    if (recoverySourceCode !== nolink) {
+    createLinksSourceCode.setAttribute("target", "_blank");
+    }
+    createLinksSourceCode.setAttribute("id", recoveryName.toLowerCase() + "_sourcecode");
+    createLinksSourceCode.setAttribute("href", recoverySourceCode);
+    createLinksSourceCode.textContent = "Source Code";
+    createLinks.appendChild(createLinksSourceCode);
+
+}

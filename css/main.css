@@ -8,6 +8,12 @@ div.middle {
     justify-content: center;
 }
 
+.textcenter {
+    text-align: center;
+    border-bottom: 1px #c2bfbf solid;
+    padding-bottom: 15px;
+}
+
 a {
     text-decoration: none;
     color: rgb(120, 120, 197);
@@ -74,6 +80,31 @@ a:hover {
 }
 
 .welcome-text {
+    padding: 5px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.nolink {
+    position: absolute;
+    background-color: #dad8d8b4;
+    padding: 5px;
+    margin-top: 90px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.nolink-title {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px #b6b5b5 solid;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.nolink-text {
     padding: 5px;
     font-size: 14px;
     text-align: justify;
@@ -201,6 +232,10 @@ a:hover {
         width: 300px;
     }
 
+    .nolink {
+        width: 300px;
+    }
+
     .choices {
         font-size: 14.5px;
     }
@@ -215,11 +250,23 @@ a:hover {
     .welcome-text {
         font-size: 16px;
     }
+
+    .nolink {
+        width: 350px;
+    }
+
+    .nolink-text {
+        font-size: 16px;
+    }
 }
 
 /* Medium screens (768px and up) */
 @media only screen and (min-width: 768px) {
     .welcome {
+        width: 400px;
+    }
+
+    .nolink {
         width: 400px;
     }
 
@@ -231,6 +278,10 @@ a:hover {
 /* Large screens (1024px and up) */
 @media only screen and (min-width: 1024px) {
     .welcome {
+        width: 450px; 
+    }
+
+    .nolink {
         width: 450px; 
     }
 
@@ -261,11 +312,19 @@ a:hover {
     .welcome {
         width: 500px;
     }
+
+    .nolink {
+        width: 500px;
+    }
 }
  
 /* XXX Large screens (2560px and up) */
 @media only screen and (min-width: 2560px) {
     .welcome {
+        width: 600px;
+    }
+
+    .nolink {
         width: 600px;
     }
 }

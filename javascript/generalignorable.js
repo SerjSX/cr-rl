@@ -1,3 +1,6 @@
+const nolink = "nolink.html";
+const NA = "N/A";
+
 const customromButton = document.getElementById("custom-rom-button");
 const customromTable = document.getElementById("custom-rom-table");
 const bottomInfo = document.getElementById("bottom-info-js");
