@@ -1,80 +1,74 @@
 /* Sample:
-ROMs[0] is for the name of the ROM.
-ROMs[1] is for the rating, if there isn't a rating type "NA" instead. If there is already, calculate the average.
-ROMs[2] is for the website, if there isn't a website link just type "nolink".
-ROMs[3] is for the supported devices website, if there isn't a website link just type "nolink".
-ROMs[4] is for the source code link, if there isn't a website link just type "nolink".
+Sample:
+    {name: "name", rating: N, website: "website", supported_devices: "supported devices link", source_code: "source code link"},
 
-Add a , and insert yours.
+the rating has to be a number without "", if there isn't a rating just type NA without "".
+
+Add this line at the bottom of the ROMs array and fill in.
+
+{name: "", rating: , website: "", supported_devices: "", source_code: ""},
 */
 
-const ROMs = ["Name", "Rating", "Website", "Device List", "Source Code"]
-ROMs[0] = ["LineageOS", "DotOS", "Pixel Experience", "ArrowOS", "Evolution X", "Paranoid Android", "HentaiOS", "AOSP", "AOKP", "BlissROMS", "SlimROMS", "CarbonROM", "AOSP Extended", "Pixel Extended", "HavocOS", "InfinityOS", "ProtonAOSP", "CipherOS", "Project Sakura", "Project Fluid", "MSM Extended", "AOSPK", "TheStyxProject", "BaikalOS", "OctaviOS", "StagOS", "KangOS", "SparkOS", "CelsiumOS", "SpiceOS", "AOSIP", "MoKee Open Source Project", "crDroid", "Pixel Plus UI", "LegionOS", "PixysOS", "AncientOS", "AICP", "Syberia Project", "RevengeOS", "ColtOS", "Potato Open Sauce Project", "CorvusOS", "CherisOS", "PalladiumOS", "KomodoOS", "The Xperience Project", "Project Awaken", "SuperiorOS", "FalconOS", "TenX-OS", "HyconOS", "ShapeShiftOS", "RohieOS", "Project 404", "WaveOS", "Derpfest", "Yet Another AOSP Project", "Project Radiant", "Nusantra Project", "Descendant"]
-ROMs[1] = [10, 10, 9, 9, 8, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA]
-ROMs[2] = ["https://lineageos.org/", "https://www.droidontime.com/", "https://download.pixelexperience.org/", "https://arrowos.net/", "https://evolution-x.org/", "https://paranoidandroid.co/", "https://wiki.newcentrix.helluvaos.com/", "https://source.android.com/", "https://aokp.co/", "https://blissroms.org/", "https://slimroms.org/", "https://carbonrom.org/", "https://aospextended.com/", "https://pixelextended.ninja/", "https://havoc-os.com/", nolink, "https://protonaosp.kdrag0n.dev/", "https://cipheros.github.io/", "https://projectsakura.xyz/", "https://projectfluid.org/", "https://project-xtended.org/", "https://aospk.org/", "https://styxproject.ml/", "https://baikalos.ru/", "http://www.octavi-os.com/", "https://stag-os.org/", "https://kangos.in/", "https://www.spark-os.live/", "https://cesiumos.xyz/", nolink, "http://aosip.weebly.com/", "https://www.mokeedev.com/en/", "https://crdroid.net/", "https://ppui.site/home", "https://legionos.org/", "https://pixysos.com/", "http://www.ancientrom.tech/", "https://www.aicp-rom.com/", "https://syberiaos.com/", "https://revengeos.com/", nolink, "https://potatoproject.co/", "https://www.corvusrom.com/", "https://cherishos.com/", "https://palladiumos.com/", "https://komodo-os.my.id/", "https://thexperienceproject.org/", nolink, "https://superioros.org/", "https://falconos.in/", nolink, "https://www.hyconos.in/#/", nolink, "https://rohieos.github.io/", "https://project404.us/", nolink, "https://derpfest.org/", "https://yaosp.dev/", nolink, "https://nusantaraproject.my.id/", "https://descendant.me/"]
-ROMs[3] = ["https://wiki.lineageos.org/devices/", "https://www.droidontime.com/devices", "https://download.pixelexperience.org/devices", "https://arrowos.net/download", "https://evolution-x.org/download", "https://paranoidandroid.co/downloads", "https://github.com/hentaiOS-Devices", "https://aokp.co/devices/", "https://forum.xda-developers.com/", "https://downloads.blissroms.org/", "https://slimroms.org/#/download", "https://get.carbonrom.org/", "https://downloads.aospextended.com/", "https://sourceforge.net/projects/pixelextended/files/", "https://havoc-os.com/download", "https://sourceforge.net/projects/infinityosrom/files/", "https://protonaosp.kdrag0n.dev/getting-started/supported-devices", "https://cipheros.github.io/Downloads/", "https://projectsakura.xyz/download/", "https://projectfluid.org/downloads.html", "https://downloads.project-xtended.org/", "https://download.aospk.org/", "https://sourceforge.net/projects/styx-os/files/Athena/", "https://dl.baikalos.ru/", "https://octavi-os.com/downloads", "https://downloads.stag-os.org/", "https://try.kangos.in/download_kangos/", "https://downloads.spark-os.live/", "https://cesiumos.xyz/devices/", "https://sourceforge.net/projects/spiceos/files/", "https://aosip.dev/", "https://download.mokeedev.com/", "https://crdroid.net/dl.php", "https://ppui.site/download", "https://legionos.org/download/", "https://pixysos.com/devices", "http://www.ancientrom.tech/downloads.html", "https://dwnld.aicp-rom.com/", "https://syberiaos.com/downloads", "https://download.revengeos.com/", "https://sourceforge.net/projects/coltos/files/", "https://potatoproject.co/devices", "https://www.corvusrom.com/download.html", "https://downloads.cherishos.com/", "https://palladiumos.com/download", "https://komodo-os.my.id/downloads.html", "https://thexperienceproject.org/downloads/OTA/", "https://sourceforge.net/projects/project-awaken/files/", "https://downloads.superioros.org/", "https://falconos.in/Download.html", "https://sourceforge.net/projects/tenx-os/files/", "https://www.hyconos.in/#/downloads", "https://sourceforge.net/projects/shapeshiftos/files/", "https://rohieos.github.io/download.html", "https://downloads.project404.us/", nolink, "https://github.com/DerpFest-Devices/", "https://mirror.codebucket.de/yaap/", nolink, "https://nusantaraproject.my.id/downloads/", "https://downloads.descendant.me/"]
-ROMs[4] = ["https://github.com/lineageos", "https://github.com/dotos", "https://github.com/PixelExperience", "https://github.com/arrowos", "https://github.com/Evolution-X", "https://github.com/AOSPA", "https://github.com/hentaiOS", "https://source.android.com/setup/build/downloading", "https://aokp.co/source/", "https://github.com/BlissRoms", "https://github.com/SlimRoms", "https://github.com/CarbonROM", "https://github.com/AospExtended", "https://github.com/PixelExtended", "https://github.com/Havoc-OS", "https://github.com/Infinity-OS", "https://github.com/ProtonAOSP", "https://github.com/CipherOS", "https://github.com/ProjectSakura", "https://github.com/Project-Fluid", "https://github.com/Project-Xtended", "https://github.com/AOSPK", "https://github.com/StyxProject", "https://github.com/baikalos/", "https://github.com/Octavi-OS", "https://github.com/StagOS", "https://github.com/Kang-OS-R", "https://github.com/Spark-Rom", "https://github.com/CesiumOS-org", "https://github.com/SpiceOS", "https://github.com/AOSiP", "https://github.com/MoKee", "https://github.com/crdroidandroid", "https://github.com/PixelPlusUI-Elle", "https://github.com/Project-LegionOS", "https://github.com/PixysOS", "https://github.com/Ancient-Lab", "https://github.com/AICP/", "https://github.com/syberia-project", "https://github.com/revengeos", "https://github.com/Colt-Enigma", "https://github.com/PotatoProject", "https://github.com/Corvus-ROM", "https://github.com/CherishOS", "https://github.com/Palladium-OS", "https://github.com/Komodo-OS-Rom", "https://github.com/xperience-aosp-lollipop", "https://github.com/Project-Awaken", "https://github.com/SuperiorOS-Devices", "https://github.com/Falcon-OS", "https://sourceforge.net/p/tenx-os/code/ref/master/", "https://github.com/HyconOS", "https://github.com/ShapeShiftOS", "https://github.com/RohieOS", "https://github.com/P-404", "https://github.com/Wave-Project", "https://github.com/DerpLab", "https://github.com/yaap", "https://github.com/ProjectRadiant", "https://github.com/NusantaraProject-ROM", "https://github.com/Descendant-xi"]
-
-
-for (let i = 0; i < ROMs[0].length; i++) {
-    const romTable = document.getElementById("custom-rom-table");
-
-    const romName = ROMs[0][i];
-    const romRating = ROMs[1][i];
-    const romWebsite = ROMs[2][i];
-    const romSupportedDevices = ROMs[3][i];
-    const romSourceCode = ROMs[4][i];
-
-    const createMain = document.createElement("tr");
-    romTable.appendChild(createMain);
-
-    const createName = document.createElement("td");
-    createName.classList.add("table-content", "table-content-first", "table-inputs")
-    createName.setAttribute("id", romName.toLowerCase() + "_name");
-    createName.textContent = romName;
-    createMain.appendChild(createName);
-
-    const createRating = document.createElement("td");
-    createRating.classList.add("table-content", "table-content-middle", "table-inputs")
-    createRating.setAttribute("id", romName.toLowerCase() + "_rating");
-    createRating.textContent = romRating;
-    createMain.appendChild(createRating);
-
-    const createLinks = document.createElement("td");
-    createLinks.classList.add("table-content", "table-content-last", "table-inputs")
-    createMain.appendChild(createLinks);
-
-    const createLinksWebsite = document.createElement("a");
-    if (romWebsite !== nolink) {
-    createLinksWebsite.setAttribute("target", "_blank");
-    }
-    createLinksWebsite.setAttribute("id", romName.toLowerCase() + "_website");
-    createLinksWebsite.setAttribute("href", romWebsite);
-    createLinksWebsite.textContent = "Website";
-    createLinks.appendChild(createLinksWebsite);
-
-    const createBreak1 = document.createElement("br");
-    createLinks.appendChild(createBreak1);
-
-    const createLinksDevices = document.createElement("a");
-    if (romSupportedDevices !== nolink) {
-    createLinksDevices.setAttribute("target", "_blank");
-    }
-    createLinksDevices.setAttribute("id", romName.toLowerCase() + "_devices");
-    createLinksDevices.setAttribute("href", romSupportedDevices);
-    createLinksDevices.textContent = "Supported Devices";
-    createLinks.appendChild(createLinksDevices);
-
-    const createBreak2 = document.createElement("br");
-    createLinks.appendChild(createBreak2);
-
-    const createLinksSourceCode = document.createElement("a");
-    if (romSourceCode !== nolink) {
-    createLinksSourceCode.setAttribute("target", "_blank");
-    }
-    createLinksSourceCode.setAttribute("id", romName.toLowerCase() + "_sourcecode");
-    createLinksSourceCode.setAttribute("href", romSourceCode);
-    createLinksSourceCode.textContent = "Source Code";
-    createLinks.appendChild(createLinksSourceCode);
-
-}
+const ROMs = [
+    {name: "LineageOS", rating: 10, website: "https://lineageos.org/", supported_devices: "https://wiki.lineageos.org/devices/", source_code: "https://github.com/lineageos"},
+    {name: "DotOS", rating: 10, website: "https://www.droidontime.com/", supported_devices: "https://www.droidontime.com/devices", source_code: "https://github.com/dotos"},
+    {name: "Pixel Experience", rating: 9, website: "https://download.pixelexperience.org/", supported_devices: "https://download.pixelexperience.org/devices", source_code: "https://github.com/PixelExperience"},
+    {name: "ArrowOS", rating: 9, website: "https://arrowos.net/", supported_devices: "https://arrowos.net/download", source_code: "https://github.com/arrowos"},
+    {name: "Evolution X", rating: 8, website: "https://evolution-x.org/", supported_devices: "https://evolution-x.org/download", source_code: "https://github.com/Evolution-X"},
+    {name: "Paranoid Android", rating: 4, website: "https://paranoidandroid.co/", supported_devices: "https://paranoidandroid.co/downloads", source_code: "https://github.com/AOSPA"},
+    {name: "HentaiOS", rating: 1, website: "https://wiki.newcentrix.helluvaos.com/", supported_devices: nolink, source_code: "https://github.com/hentaiOS"},
+    {name: "AOSP", rating: 7, website: "https://source.android.com/", supported_devices: "https://forum.xda-developers.com/", source_code: "https://source.android.com/setup/build/downloading"},
+    {name: "AOKP", rating: 4.5, website: "https://aokp.co/", supported_devices: "https://aokp.co/devices/", source_code: "https://aokp.co/source/"},
+    {name: "BlissROMs", rating: 8, website: "https://blissroms.org/", supported_devices: "https://downloads.blissroms.org/", source_code: "https://github.com/BlissRoms"},
+    {name: "SlimROMs", rating: NA, website: "https://slimroms.org/", supported_devices: "https://slimroms.org/#/download", source_code: "https://github.com/SlimRoms"},
+    {name: "CarbonROM", rating: NA, website: "https://carbonrom.org/", supported_devices: "https://get.carbonrom.org/", source_code: "https://github.com/CarbonROM"},
+    {name: "AOSP Extended", rating: NA, website: "https://aospextended.com/", supported_devices: "https://downloads.aospextended.com/", source_code: "https://github.com/AospExtended"},
+    {name: "Pixel Extended", rating: NA, website: "https://pixelextended.ninja/", supported_devices: "https://sourceforge.net/projects/pixelextended/files/", source_code: "https://github.com/PixelExtended"},
+    {name: "HavocOS", rating: NA, website: "https://havoc-os.com/", supported_devices: "https://havoc-os.com/download", source_code: "https://github.com/Havoc-OS"},
+    {name: "InfinityOS", rating: NA, website: nolink, supported_devices: "https://sourceforge.net/projects/infinityosrom/files/", source_code: "https://github.com/Infinity-OS"},
+    {name: "ProtonAOSP", rating: NA, website: "https://protonaosp.kdrag0n.dev/", supported_devices: "https://protonaosp.kdrag0n.dev/getting-started/supported-devices", source_code: "https://github.com/ProtonAOSP"},
+    {name: "CipherOS", rating: NA, website: "https://cipheros.github.io/", supported_devices: "https://cipheros.github.io/Downloads/", source_code: "https://github.com/CipherOS"},
+    {name: "Project Sakura", rating: NA, website: "https://projectsakura.xyz/", supported_devices: "https://projectsakura.xyz/download/", source_code: "https://github.com/ProjectSakura"},
+    {name: "Project Fluid", rating: NA, website: "https://projectfluid.org/", supported_devices: "https://projectfluid.org/downloads.html", source_code: "https://github.com/Project-Fluid"},
+    {name: "MSM Extended", rating: NA, website: "https://project-xtended.org/", supported_devices: "https://downloads.project-xtended.org/", source_code: "https://github.com/Project-Xtended"},
+    {name: "AOSPK", rating: NA, website: "https://aospk.org/", supported_devices: "https://download.aospk.org/", source_code: "https://github.com/AOSPK"},
+    {name: "TheStyxProject", rating: NA, website: "https://styxproject.ml/", supported_devices: "https://sourceforge.net/projects/styx-os/files/Athena/", source_code: "https://github.com/StyxProject"},
+    {name: "BaikalOS", rating: NA, website: "https://baikalos.ru/", supported_devices: "https://dl.baikalos.ru/", source_code: "https://github.com/baikalos/"},
+    {name: "OctaviOS", rating: NA, website: "http://www.octavi-os.com/", supported_devices: "https://octavi-os.com/downloads", source_code: "https://github.com/Octavi-OS"},
+    {name: "StagOS", rating: NA, website: "https://stag-os.org/", supported_devices: "https://downloads.stag-os.org/", source_code: "https://github.com/StagOS"},
+    {name: "KangOS", rating: NA, website: "https://kangos.in/", supported_devices: "https://try.kangos.in/download_kangos/", source_code: "https://github.com/Kang-OS-R"},
+    {name: "SparkOS", rating: NA, website: "https://www.spark-os.live/", supported_devices: "https://downloads.spark-os.live/", source_code: "https://github.com/Spark-Rom"},
+    {name: "CelsiumOS", rating: NA, website: "https://cesiumos.xyz/", supported_devices: "https://cesiumos.xyz/devices/", source_code: "https://github.com/CesiumOS-org"},
+    {name: "SpiceOS", rating: NA, website: nolink, supported_devices: "https://sourceforge.net/projects/spiceos/files/", source_code: "https://github.com/SpiceOS"},
+    {name: "AOSIP", rating: NA, website: "http://aosip.weebly.com/", supported_devices: "https://aosip.dev/", source_code: "https://github.com/AOSiP"},
+    {name: "MoKee Open Source Project", rating: NA, website: "https://www.mokeedev.com/en/", supported_devices: "https://download.mokeedev.com/", source_code: "https://github.com/MoKee"},
+    {name: "crDroid", rating: NA, website: "https://crdroid.net/", supported_devices: "https://crdroid.net/dl.php", source_code: "https://github.com/crdroidandroid"},
+    {name: "Pixel Plus UI", rating: NA, website: "https://ppui.site/home", supported_devices: "https://ppui.site/download", source_code: "https://github.com/PixelPlusUI-Elle"},
+    {name: "LegionOS", rating: NA, website: "https://legionos.org/", supported_devices: "https://legionos.org/download/", source_code: "https://github.com/Project-LegionOS"},
+    {name: "PixysOS", rating: NA, website: "https://pixysos.com/", supported_devices: "https://pixysos.com/devices", source_code: "https://github.com/PixysOS"},
+    {name: "AncientOS", rating: NA, website: "http://www.ancientrom.tech/", supported_devices: "http://www.ancientrom.tech/downloads.html", source_code: "https://github.com/Ancient-Lab"},
+    {name: "AICP", rating: NA, website: "https://www.aicp-rom.com/", supported_devices: "https://dwnld.aicp-rom.com/", source_code: "https://github.com/AICP/"},
+    {name: "Syberia Project", rating: NA, website: "https://syberiaos.com/", supported_devices: "https://syberiaos.com/downloads", source_code: "https://github.com/syberia-project"},
+    {name: "RevengeOS", rating: NA, website: "https://revengeos.com/", supported_devices: "https://download.revengeos.com/", source_code: "https://github.com/revengeos"},
+    {name: "ColtOS", rating: NA, website: nolink, supported_devices: "https://sourceforge.net/projects/coltos/files/", source_code: "https://github.com/Colt-Enigma"},
+    {name: "Potato Open Sauce Project", rating: NA, website: "https://potatoproject.co/", supported_devices: "https://potatoproject.co/devices", source_code: "https://github.com/PotatoProject"},
+    {name: "CorvusOS", rating: NA, website: "https://www.corvusrom.com/", supported_devices: "https://www.corvusrom.com/download.html", source_code: "https://github.com/Corvus-ROM"},
+    {name: "CherisOS", rating: NA, website: "https://cherishos.com/", supported_devices: "https://downloads.cherishos.com/", source_code: "https://github.com/CherishOS"},
+    {name: "PalladiumOS", rating: NA, website: "https://palladiumos.com/", supported_devices: "https://palladiumos.com/download", source_code: "https://github.com/Palladium-OS"},
+    {name: "KomodoOS", rating: NA, website: "https://komodo-os.my.id/", supported_devices: "https://komodo-os.my.id/downloads.html", source_code: "https://github.com/Komodo-OS-Rom"},
+    {name: "The Xperience Project", rating: NA, website: "https://thexperienceproject.org/", supported_devices: "https://thexperienceproject.org/downloads/OTA/", source_code: "https://github.com/xperience-aosp-lollipop"},
+    {name: "Project Awaken", rating: NA, website: nolink, supported_devices: "https://sourceforge.net/projects/project-awaken/files/", source_code: "https://github.com/Project-Awaken"},
+    {name: "SuperiorOS", rating: NA, website: "https://superioros.org/", supported_devices: "https://downloads.superioros.org/", source_code: "https://github.com/SuperiorOS-Devices"},
+    {name: "FalconOS", rating: NA, website: "https://falconos.in/", supported_devices: "https://falconos.in/Download.html", source_code: "https://github.com/Falcon-OS"},
+    {name: "TenX-OS", rating: NA, website: nolink, supported_devices: "https://sourceforge.net/projects/tenx-os/files/", source_code: "https://sourceforge.net/p/tenx-os/code/ref/master/"},
+    {name: "HyconOS", rating: NA, website: "https://www.hyconos.in/#/", supported_devices: "https://www.hyconos.in/#/downloads", source_code: "https://github.com/HyconOS"},
+    {name: "ShapeShiftOS", rating: NA, website: nolink, supported_devices: "https://sourceforge.net/projects/shapeshiftos/files/", source_code: "https://github.com/ShapeShiftOS"},
+    {name: "RohieOS", rating: NA, website: "https://rohieos.github.io/", supported_devices: "https://rohieos.github.io/download.html", source_code: "https://github.com/RohieOS"},
+    {name: "Project 404", rating: NA, website: "https://project404.us/", supported_devices: "https://downloads.project404.us/", source_code: "https://github.com/P-404"},
+    {name: "WaveOS", rating: NA, website: nolink, supported_devices: nolink, source_code: "https://github.com/Wave-Project"},
+    {name: "Derpfest", rating: NA, website: "https://derpfest.org/", supported_devices: "https://github.com/DerpFest-Devices/", source_code: "https://github.com/DerpLab"},
+    {name: "Yet Another AOSP Project", rating: NA, website: "https://yaosp.dev/", supported_devices: "https://mirror.codebucket.de/yaap/", source_code: "https://github.com/yaap"},
+    {name: "Project Radiant", rating: NA, website: nolink, supported_devices: nolink, source_code: "https://github.com/ProjectRadiant"},
+    {name: "Nusantra Project", rating: NA, website: "https://nusantaraproject.my.id/", supported_devices: "https://nusantaraproject.my.id/downloads/", source_code: "https://github.com/NusantaraProject-ROM"},
+    {name: "Descendant", rating: NA, website: "https://descendant.me/", supported_devices: "https://downloads.descendant.me/", source_code: "https://github.com/Descendant-xi"}
+];

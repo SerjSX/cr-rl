@@ -1,80 +1,15 @@
 /* Sample:
-Recoveries[0] is for the name of the recovery.
-Recoveries[1] is for the rating, if there isn't a rating type "NA" instead. If there is already, calculate the average.
-Recoveries[2] is for the website, if there isn't a website link just type "nolink".
-Recoveries[3] is for the supported devices website, if there isn't a website link just type "nolink".
-Recoveries[4] is for the source code link, if there isn't a website link just type "nolink".
+    {name: "name", rating: N, website: "website", supported_devices: "supported devices link", source_code: "source code link"},
 
-Add a , and insert yours.
+the rating has to be a number, if there isn't a rating just type NA without "".
+
+Add this line at the bottom of the Recoveries array and fill in.
 */
 
-const Recoveries = ["Name", "Rating", "Website", "Device List", "Source Code"]
-Recoveries[0] = ["TWRP", "SkyHawk", "OrangeFox", "LineageOS Recovery", "Pterodon"]
-Recoveries[1] = [10, 10, 9.5, 1.5, 1]
-Recoveries[2] = ["https://twrp.me/", "https://skyhawkrecovery.github.io/", "https://orangefox.download/", "https://lineageos.org/", nolink]
-Recoveries[3] = ["https://twrp.me/Devices/", "https://sourceforge.net/projects/shrp/files/", "https://orangefox.download/", "https://wiki.lineageos.org/devices/", nolink]
-Recoveries[4] = ["https://github.com/TeamWin", "https://github.com/SHRP", "https://gitlab.com/OrangeFox/infrastructure/dsite", "https://github.com/lineageos", "https://github.com/PterodonRecovery"]
-
-
-for (let i = 0; i < Recoveries[0].length; i++) {
-    const recoveryTable = document.getElementById("custom-recovery-table");
-
-    const recoveryName = Recoveries[0][i];
-    const recoveryRating = Recoveries[1][i];
-    const recoveryWebsite = Recoveries[2][i];
-    const recoverySupportedDevices = Recoveries[3][i];
-    const recoverySourceCode = Recoveries[4][i];
-
-    const createMain = document.createElement("tr");
-    recoveryTable.appendChild(createMain);
-
-    const createName = document.createElement("td");
-    createName.classList.add("table-content", "table-content-first", "table-inputs")
-    createName.setAttribute("id", recoveryName.toLowerCase() + "_name");
-    createName.textContent = recoveryName;
-    createMain.appendChild(createName);
-
-    const createRating = document.createElement("td");
-    createRating.classList.add("table-content", "table-content-middle", "table-inputs")
-    createRating.setAttribute("id", recoveryName.toLowerCase() + "_rating");
-    createRating.textContent = recoveryRating;
-    createMain.appendChild(createRating);
-
-    const createLinks = document.createElement("td");
-    createLinks.classList.add("table-content", "table-content-last", "table-inputs")
-    createMain.appendChild(createLinks);
-
-    const createLinksWebsite = document.createElement("a");
-    if (recoveryWebsite !== nolink) {
-    createLinksWebsite.setAttribute("target", "_blank");
-    }
-    createLinksWebsite.setAttribute("id", recoveryName.toLowerCase() + "_website");
-    createLinksWebsite.setAttribute("href", recoveryWebsite);
-    createLinksWebsite.textContent = "Website";
-    createLinks.appendChild(createLinksWebsite);
-
-    const createBreak1 = document.createElement("br");
-    createLinks.appendChild(createBreak1);
-
-    const createLinksDevices = document.createElement("a");
-    if (recoverySupportedDevices !== nolink) {
-    createLinksDevices.setAttribute("target", "_blank");
-    }
-    createLinksDevices.setAttribute("id", recoveryName.toLowerCase() + "_devices");
-    createLinksDevices.setAttribute("href", recoverySupportedDevices);
-    createLinksDevices.textContent = "Supported Devices";
-    createLinks.appendChild(createLinksDevices);
-
-    const createBreak2 = document.createElement("br");
-    createLinks.appendChild(createBreak2);
-
-    const createLinksSourceCode = document.createElement("a");
-    if (recoverySourceCode !== nolink) {
-    createLinksSourceCode.setAttribute("target", "_blank");
-    }
-    createLinksSourceCode.setAttribute("id", recoveryName.toLowerCase() + "_sourcecode");
-    createLinksSourceCode.setAttribute("href", recoverySourceCode);
-    createLinksSourceCode.textContent = "Source Code";
-    createLinks.appendChild(createLinksSourceCode);
-
-}
+const Recoveries = [
+    {name: "TWRP", rating: 10, website: "https://twrp.me/", supported_devices: "https://twrp.me/Devices/", source_code: "https://github.com/TeamWin"},
+    {name: "SkyHawk", rating: 10, website: "https://skyhawkrecovery.github.io/", supported_devices: "https://sourceforge.net/projects/shrp/files/", source_code: "https://github.com/SHRP"},
+    {name: "OrangeFox", rating: 9.5, website: "https://orangefox.download/", supported_devices: "https://orangefox.download/", source_code: "https://gitlab.com/OrangeFox/infrastructure/dsite"},
+    {name: "LineageOS Recovery", rating: 1.5, website: "https://lineageos.org/", supported_devices: "https://wiki.lineageos.org/devices/", source_code: "https://github.com/lineageos"},
+    {name: "Pterodon", rating: 1, website: nolink, supported_devices: nolink, source_code: "https://github.com/PterodonRecovery"},
+];
