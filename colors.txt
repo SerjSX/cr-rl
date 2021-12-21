@@ -12,4 +12,3 @@ Text on P & S: #000000
 Dark:
 Background: #121212
 Primary: #000000
-Secondary 

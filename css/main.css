@@ -1,6 +1,15 @@
+#backup {
+    position: absolute;
+    top: 0%;
+}
+
 body.background {
     font-family: 'Open Sans', sans-serif;
     transition: background-color 0.2s;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 div.middle {
@@ -110,65 +119,46 @@ a:hover {
     text-align: justify;
 }
 
-.choice {
-    position: absolute;
-    background-color: #dad8d8b4;
-    padding: 5px;
+.table-choice {
     margin-top: 300px;
-    width: 250px;
-    border-radius: 10px;
 }
 
-.choice-title {
-    padding: 5px;
-    text-align: center;
-    font-weight: bold;
-    border-bottom: 1px #b6b5b5 solid;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-    font-size: 16px;
-}
-
-.choices-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.choices {
-    text-align: center;
-    margin-right: 5px;
-    margin-top: 5px;
-    padding: 10px;
-    background-color: #bcbcbc;
+.table-choice-button {
     cursor: pointer;
-    border-radius: 30px;
-    font-size: 14px;
+    background-color: #8c8c8c93;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    color: rgb(0, 0, 0);
     transition: background-color 0.5s;
-    font-family: 'Oswald', sans-serif;
 }
 
-.choices:hover {
-    background-color: #eeeeee;
-    transition: background-color 0.5s;
+.table-choice-button:hover {
+    background-color: #8c8c8c67;
+}
+
+.tables-main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
 .tables {
-    position: absolute;
-    margin-top: 440px;
-    margin-left: 10px;
-    margin-right: 10px;
     border: 1px solid #bcbcbc;
     padding: 5px;
     text-align: center;
-    border-radius: 10px;
-    display: none;
-    opacity: 0;
     font-size: 12px;
+    margin-top: 55px;
 }
 
-.table2 {
-    display: none;
+.table-heading {
+    position: absolute;
+    border-top: 2px solid #bcbcbc;
+    border-right: 2px solid #bcbcbc;
+    border-left: 2px solid #bcbcbc;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .table-content {
@@ -198,16 +188,34 @@ a:hover {
     padding-top: 8px;
 }
 
-.bottom-info {
+.customrecoveries {
+    margin-top: 30px;
+}
+
+.back-up {
     position: fixed;
+    bottom: 0%;
+    right: 0%;
+    padding: 5px;
+    transition: background-color 0.5s;
+    background-color: #8c8c8c;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+}
+
+.back-up:hover {
+    background-color: #bcbcbc;
+}
+
+.bottom-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    bottom: 0px;
     background-color: #bcbcbc6b;
     padding: 5px;
-    border-top-right-radius: 10px;
-    border-top-left-radius:10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    z-index: 100;
 }
 
 .bottom-text {
@@ -234,10 +242,6 @@ a:hover {
 
     .nolink {
         width: 300px;
-    }
-
-    .choices {
-        font-size: 14.5px;
     }
 }
 
@@ -270,8 +274,43 @@ a:hover {
         width: 400px;
     }
 
+    .tables-main {
+        flex-direction: row;
+        margin-top: 275px;
+    }
+
     .tables {
         font-size: 15px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .customrecoveries {
+        margin-top: 0px;
+    }
+
+    .table-heading {
+        margin-left: 20px;
+    }
+
+    .table-heading-recovery {
+        margin-left: 292px;
+    }
+
+    .tables-custom-rom {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .tables-custom-recovery {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .table-choice {
+        display: none;
     }
 }
 
@@ -285,21 +324,10 @@ a:hover {
         width: 450px; 
     }
 
-    .choices {
-        font-size: 16px;
-    }
-
     .toptext {
         font-size: 20px;
     }
 
-    .choice {
-        margin-top: 280px;
-    }
-
-    .tables {
-        margin-top: 430px;
-    }
 }
 
 /* X Large screens (1280px and up) */
@@ -329,33 +357,13 @@ a:hover {
     }
 }
 
-.remove {
-    display: none;
-}
-
-.add {
-    display: initial;
-}
-
-.hide {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.5s, opacity 0.5s;
-  }
-
-.show {
-    display: initial;
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0.5s, opacity 0.5s;
-  }
-
   .buttononclick {
     background-color: #eeeeee;
 }
 
 .darkbutton {
     background-color: #37474f;
+    color: white;
 }
 
 .darkbutton:hover {

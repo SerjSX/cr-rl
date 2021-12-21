@@ -15,6 +15,8 @@
 
 <body class="background" id="background-js">
 
+<div id="backup"></div>
+
   <div class="topmenu" id="topmenu-js">
     <div class="toptext">Custom ROM & Recovery List</div>
     <img role="button" tabindex="0" id="theme-img-js" class="themeimg" src="media/theme/round_dark_mode_black_24dp.png" alt="theme change">
@@ -25,15 +27,16 @@
     <div class="welcome-text">CR&RL is a small and simple website designed by a member from the XDA's Discord server. This website contains information about custom ROMs and recoveries, information such as ratings and external links.</div>
   </div></div>
 
-  <div class="middle"><div class="choice" id="choice-js">
-    <div class="choice-title">Which list would you like to see?</div>
-    <div class="middle"><div class="choices-box">
-    <div class="middle"><div class="choices" tabindex="0" id="custom-rom-button">Custom ROMs</div>
-    <div class="choices" tabindex="0" id="custom-recovery-button">Custom Recoveries</div></div>
-    </div></div>
+  <div class="middle"><div class="table-choice">
+    <a href="#customroms"><button class="table-choice-button" id="table-choice-button-one-js">Custom ROMs</button></a>
+    <a href="#customrecoveries"><button class="table-choice-button" id="table-choice-button-two-js">Custom Recoveries</button></a>
   </div></div>
 
-  <div class="middle"><table class="tables" id="custom-rom-table">
+<div class="middle"><div class="tables-main">
+
+<div class="middle"><span id="customroms">
+  <table class="tables tables-custom-rom" id="custom-rom-table" id="customroms">
+    <h3 class="table-heading">Custom ROMs</h3>
       <th class="table-content table-content-first">Name</th>
       <th class="table-content table-content-middle">Rating /10</th>
       <th class="table-content table-content-last">External Links</th>
@@ -42,9 +45,12 @@
 
         <!--Custom ROMs Section Over-->
       
-  </table></div>
+  </table>
+  </span></div>
 
-  <div class="middle"><table class="tables table2" id="custom-recovery-table">
+<div class="middle"><span class="customrecoveries" id="customrecoveries">
+  <table class="tables tables-custom-recovery" id="custom-recovery-table">
+    <h3 class="table-heading table-heading-recovery">Custom Recoveries</h3>
     <th class="table-content table-content-first">Name</th>
     <th class="table-content table-content-middle">Rating /10</th>
     <th class="table-content table-content-last">External Links</th>
@@ -54,10 +60,15 @@
 
         <!--Custom Recoveries Section Over-->
 
-</table></div>
+</table></span></div>
+</div></div>
+
+<a href="#backup"><img role="button" tabindex="0" class="back-up" id="back-up-js" src="media/arrowup/black-24dp/1x/round_arrow_upward_black_24dp.png" alt="Back Up"></button></a>
+
+</body>
 
   <div class="middle"><div class="bottom-info" id="bottom-info-js">
-    <div class="bottom-text">CR&RL - Custom ROM & Recovery List is a website developed volunteerily by SerjSX</div>
+    <div class="bottom-text">CR&RL - Custom ROM & Recovery List is a website developed volunteerily by SerjSX to have a library including all of the custom ROMs and recoveries online. You can visit my Github page here <a href="https://github.com/SerjSX/" target="_blank">https://github.com/SerjSX/</a>, you can view the source code of the project by visiting here <a href="https://github.com/SerjSX/cr-rl" target="_blank">https://github.com/SerjSX/cr-rl</a>.</div>
   </div></div>
 
 <script src="javascript/generalignorable.js" defer></script>
