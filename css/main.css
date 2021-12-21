@@ -274,15 +274,36 @@ a:hover {
         width: 400px;
     }
 
+    .tables {
+        font-size: 15px;
+    }
+
+
+}
+
+/* Large screens (1024px and up) */
+@media only screen and (min-width: 1024px) {
+    .welcome {
+        width: 450px; 
+    }
+
+    .nolink {
+        width: 450px; 
+    }
+
+    .toptext {
+        font-size: 20px;
+    }
+
     .tables-main {
         flex-direction: row;
         margin-top: 275px;
     }
 
     .tables {
-        font-size: 15px;
         margin-right: 20px;
         margin-left: 20px;
+        width: max-content;
     }
 
     .customrecoveries {
@@ -311,21 +332,6 @@ a:hover {
 
     .table-choice {
         display: none;
-    }
-}
-
-/* Large screens (1024px and up) */
-@media only screen and (min-width: 1024px) {
-    .welcome {
-        width: 450px; 
-    }
-
-    .nolink {
-        width: 450px; 
-    }
-
-    .toptext {
-        font-size: 20px;
     }
 
 }
