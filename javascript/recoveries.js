@@ -11,5 +11,5 @@ const Recoveries = [
     {name: "SkyHawk", rating: 10, website: "https://skyhawkrecovery.github.io/", supported_devices: "https://sourceforge.net/projects/shrp/files/", source_code: "https://github.com/SHRP"},
     {name: "OrangeFox", rating: 9.5, website: "https://orangefox.download/", supported_devices: "https://orangefox.download/", source_code: "https://gitlab.com/OrangeFox/infrastructure/dsite"},
     {name: "LineageOS Recovery", rating: 1.5, website: "https://lineageos.org/", supported_devices: "https://wiki.lineageos.org/devices/", source_code: "https://github.com/lineageos"},
-    {name: "Pterodon", rating: 1, website: nolink, supported_devices: nolink, source_code: "https://github.com/PterodonRecovery"},
+    {name: "Pterodon", rating: 1, website: "nolink", supported_devices: "nolink", source_code: "https://github.com/PterodonRecovery"},
 ];

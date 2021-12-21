@@ -120,7 +120,7 @@ a:hover {
 }
 
 .table-choice {
-    margin-top: 300px;
+    margin-top: 475px;
 }
 
 .table-choice-button {
@@ -140,7 +140,7 @@ a:hover {
 .tables-main {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .tables {
@@ -243,6 +243,14 @@ a:hover {
     .nolink {
         width: 300px;
     }
+
+    .table-choice {
+        margin-top: 455px;
+    }
+
+    .tables-main {
+        margin-top: 50px;
+    }
 }
 
 /* Small screens (640px and up) */
@@ -262,6 +270,14 @@ a:hover {
     .nolink-text {
         font-size: 16px;
     }
+
+    .table-choice {
+        margin-top: 500px;
+    }
+
+    .tables-main {
+        margin-top: 60px;
+    }
 }
 
 /* Medium screens (768px and up) */
@@ -278,6 +294,13 @@ a:hover {
         font-size: 15px;
     }
 
+    .table-choice {
+        margin-top: 465px;
+    }
+
+    .tables-main {
+        margin-top: 50px;
+    }
 
 }
 
@@ -297,7 +320,7 @@ a:hover {
 
     .tables-main {
         flex-direction: row;
-        margin-top: 275px;
+        margin-top: 450px;
     }
 
     .tables {
@@ -315,7 +338,11 @@ a:hover {
     }
 
     .table-heading-recovery {
-        margin-left: 292px;
+        margin-left: 272px;
+    }
+
+    .table-heading-rom {
+        margin-right: 390px;
     }
 
     .tables-custom-rom {

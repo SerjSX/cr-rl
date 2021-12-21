@@ -1,4 +1,3 @@
-const nolink = "nolink.html";
 const NA = "N/A";
 
 const themebutton = document.getElementById("theme-img-js");

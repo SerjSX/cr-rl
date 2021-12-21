@@ -46,10 +46,9 @@ Recoveries.sort(function (a, b) {
     createLinks.classList.add("table-content", "table-content-last", "table-inputs")
     createMain.appendChild(createLinks);
 
+    if (romWebsite !== "nolink") {
     const createLinksWebsite = document.createElement("a");
-    if (romWebsite !== nolink) {
     createLinksWebsite.setAttribute("target", "_blank");
-    }
     createLinksWebsite.setAttribute("id", romName.toLowerCase() + "_website");
     createLinksWebsite.setAttribute("href", romWebsite);
     createLinksWebsite.textContent = "Website";
@@ -57,11 +56,11 @@ Recoveries.sort(function (a, b) {
 
     const createBreak1 = document.createElement("br");
     createLinks.appendChild(createBreak1);
-
-    const createLinksDevices = document.createElement("a");
-    if (romSupportedDevices !== nolink) {
-    createLinksDevices.setAttribute("target", "_blank");
     }
+
+    if (romSupportedDevices !== "nolink") {
+    const createLinksDevices = document.createElement("a");
+    createLinksDevices.setAttribute("target", "_blank");
     createLinksDevices.setAttribute("id", romName.toLowerCase() + "_devices");
     createLinksDevices.setAttribute("href", romSupportedDevices);
     createLinksDevices.textContent = "Supported Devices";
@@ -69,15 +68,16 @@ Recoveries.sort(function (a, b) {
 
     const createBreak2 = document.createElement("br");
     createLinks.appendChild(createBreak2);
-
-    const createLinksSourceCode = document.createElement("a");
-    if (romSourceCode !== nolink) {
-    createLinksSourceCode.setAttribute("target", "_blank");
     }
+
+    if (romSourceCode !== "nolink") {
+    const createLinksSourceCode = document.createElement("a");
+    createLinksSourceCode.setAttribute("target", "_blank");
     createLinksSourceCode.setAttribute("id", romName.toLowerCase() + "_sourcecode");
     createLinksSourceCode.setAttribute("href", romSourceCode);
     createLinksSourceCode.textContent = "Source Code";
     createLinks.appendChild(createLinksSourceCode);
+    }
 
 }
 
@@ -111,10 +111,9 @@ Recoveries.sort(function (a, b) {
     createLinks.classList.add("table-content", "table-content-last", "table-inputs")
     createMain.appendChild(createLinks);
 
+    if (recoveryWebsite !== "nolink") {
     const createLinksWebsite = document.createElement("a");
-    if (recoveryWebsite !== nolink) {
     createLinksWebsite.setAttribute("target", "_blank");
-    }
     createLinksWebsite.setAttribute("id", recoveryName.toLowerCase() + "_website");
     createLinksWebsite.setAttribute("href", recoveryWebsite);
     createLinksWebsite.textContent = "Website";
@@ -122,11 +121,11 @@ Recoveries.sort(function (a, b) {
 
     const createBreak1 = document.createElement("br");
     createLinks.appendChild(createBreak1);
-
-    const createLinksDevices = document.createElement("a");
-    if (recoverySupportedDevices !== nolink) {
-    createLinksDevices.setAttribute("target", "_blank");
     }
+
+    if (recoverySupportedDevices !== "nolink") {
+    const createLinksDevices = document.createElement("a");
+    createLinksDevices.setAttribute("target", "_blank");
     createLinksDevices.setAttribute("id", recoveryName.toLowerCase() + "_devices");
     createLinksDevices.setAttribute("href", recoverySupportedDevices);
     createLinksDevices.textContent = "Supported Devices";
@@ -134,14 +133,14 @@ Recoveries.sort(function (a, b) {
 
     const createBreak2 = document.createElement("br");
     createLinks.appendChild(createBreak2);
-
-    const createLinksSourceCode = document.createElement("a");
-    if (recoverySourceCode !== nolink) {
-    createLinksSourceCode.setAttribute("target", "_blank");
     }
+
+    if (recoverySourceCode !== "nolink") {
+    const createLinksSourceCode = document.createElement("a");
+    createLinksSourceCode.setAttribute("target", "_blank");
     createLinksSourceCode.setAttribute("id", recoveryName.toLowerCase() + "_sourcecode");
     createLinksSourceCode.setAttribute("href", recoverySourceCode);
     createLinksSourceCode.textContent = "Source Code";
     createLinks.appendChild(createLinksSourceCode);
-
+    }
 }
