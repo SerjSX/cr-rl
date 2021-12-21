@@ -31,6 +31,9 @@ function changeTheme() {
         tableChoiceButtonTWO.classList.add("darkbutton");
         document.getElementById("bottom-info-js").style.color = "#ffffff";
         themeState = "dark";
+        localStorage.clear();
+        localStorage.setItem("themeState", themeState);
+        savedThemeState = localStorage.getItem("themeState");
     } else if (themeState === "dark") {
         pageBackground.style.backgroundColor = "#ffffff";
         topMenu.style.backgroundColor = "#c7c7c7";
@@ -47,5 +50,54 @@ function changeTheme() {
         tableChoiceButtonTWO.classList.remove("darkbutton");
         document.getElementById("bottom-info-js").style.color = "#000000";
         themeState = "light";
+        localStorage.clear();
+        localStorage.setItem("themeState", themeState);
+        savedThemeState = localStorage.getItem("themeState");
     }
 }
+
+var savedThemeState = localStorage.getItem("themeState");
+
+function savedTheme() {
+    if (savedThemeState === "dark") {
+        pageBackground.style.backgroundColor = "#212121";
+        topMenu.style.backgroundColor = "#000000";
+        topMenu.style.color = "#ffffff";
+        welcomeBox.style.backgroundColor = "#484848";
+        welcomeBox.style.color = "#ffffff";
+        themebutton.classList.add("darkbutton");
+        themebutton.setAttribute("src", "media/theme/round_light_mode_white_24dp.png");
+        customROMs.style.color = "#ffffff";
+        customRecoveries.style.color = "#ffffff";
+        backUpButton.classList.add("darkbutton");
+        backUpButton.setAttribute("src", "media/arrowup/white-24dp/1x/round_arrow_upward_white_24dp.png");
+        tableChoiceButtonONE.classList.add("darkbutton");
+        tableChoiceButtonTWO.classList.add("darkbutton");
+        document.getElementById("bottom-info-js").style.color = "#ffffff";
+        themeState = "dark";
+        localStorage.clear();
+        localStorage.setItem("themeState", themeState);
+        savedThemeState = localStorage.getItem("themeState");
+    } else if (savedThemeState === "light") {
+        pageBackground.style.backgroundColor = "#ffffff";
+        topMenu.style.backgroundColor = "#c7c7c7";
+        topMenu.style.color = "black";
+        welcomeBox.style.backgroundColor = "#dad8d8b4";
+        welcomeBox.style.color = "black";
+        themebutton.classList.remove("darkbutton");
+        themebutton.setAttribute("src", "media/theme/round_dark_mode_black_24dp.png");
+        customROMs.style.color = "#000000";
+        customRecoveries.style.color = "#000000";
+        backUpButton.classList.remove("darkbutton");
+        backUpButton.setAttribute("src", "media/arrowup/black-24dp/1x/round_arrow_upward_black_24dp.png");
+        tableChoiceButtonONE.classList.remove("darkbutton");
+        tableChoiceButtonTWO.classList.remove("darkbutton");
+        document.getElementById("bottom-info-js").style.color = "#000000";
+        themeState = "light";
+        localStorage.clear();
+        localStorage.setItem("themeState", themeState);
+        savedThemeState = localStorage.getItem("themeState");
+    }
+}
+
+savedTheme()
