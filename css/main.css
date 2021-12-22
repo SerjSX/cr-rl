@@ -145,25 +145,21 @@ a:hover {
 
 .tables {
     border: 1px solid #bcbcbc;
-    padding: 5px;
     text-align: center;
     font-size: 12px;
-    margin-top: 55px;
+    border-radius: 10px;
 }
 
 .table-heading {
-    position: absolute;
-    border-top: 2px solid #bcbcbc;
-    border-right: 2px solid #bcbcbc;
-    border-left: 2px solid #bcbcbc;
-    padding: 5px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    border-bottom: 2px solid #bcbcbc;
 }
 
 .table-content {
     padding-left: 15px;
     padding-right: 10px;
+    padding-top: 10px;
 }
 
 .table-content-first {
@@ -331,30 +327,6 @@ a:hover {
 
     .customrecoveries {
         margin-top: 0px;
-    }
-
-    .table-heading {
-        margin-left: 20px;
-    }
-
-    .table-heading-recovery {
-        margin-left: 272px;
-    }
-
-    .table-heading-rom {
-        margin-right: 390px;
-    }
-
-    .tables-custom-rom {
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-    .tables-custom-recovery {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
     }
 
     .table-choice {

@@ -1,3 +1,6 @@
+const romsHeading = document.getElementById("table-heading-rom-js");
+const recoveriesHeading = document.getElementById("table-heading-recovery-js");
+
 Recoveries.sort(function (a, b) {
     if (a.rating === NA) {
         return 1
@@ -19,7 +22,7 @@ Recoveries.sort(function (a, b) {
   });
 
   for (let i = 0; i < ROMs.length; i++) {
-    const romTable = document.getElementById("custom-rom-table");
+    const romTable = document.getElementById("append-here-roms");
 
     const romName = ROMs[i]["name"];
     const romRating = ROMs[i]["rating"];
@@ -79,12 +82,13 @@ Recoveries.sort(function (a, b) {
     createLinks.appendChild(createLinksSourceCode);
     }
 
+    romsHeading.textContent = "Custom ROMs";
 }
 
   
 
   for (let i = 0; i < Recoveries.length; i++) {
-    const recoveryTable = document.getElementById("custom-recovery-table");
+    const recoveryTable = document.getElementById("append-here-recoveries");
 
     const recoveryName = Recoveries[i]["name"];
     const recoveryRating = Recoveries[i]["rating"];
@@ -143,4 +147,6 @@ Recoveries.sort(function (a, b) {
     createLinksSourceCode.textContent = "Source Code";
     createLinks.appendChild(createLinksSourceCode);
     }
+
+    recoveriesHeading.textContent = "Custom Recoveries";
 }
