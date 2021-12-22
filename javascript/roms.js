@@ -3,6 +3,7 @@ Sample:
     {name: "name", rating: N, website: "website", supported_devices: "supported devices link", source_code: "source code link"},
 
 the rating has to be a number without "", if there isn't a rating just type NA without "".
+If the website/supported_devices/source_code don't have links just type "nolink" with "".
 
 Add this line at the bottom of the ROMs array and fill in.
 
