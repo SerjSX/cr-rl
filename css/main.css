@@ -197,7 +197,6 @@ a:hover {
     background-color: #8c8c8c;
     cursor: pointer;
     border-top-left-radius: 10px;
-    opacity: 0.85;
 }
 
 .back-up:hover {
@@ -205,18 +204,45 @@ a:hover {
 }
 
 .bottom-info {
+    position: absolute;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #bcbcbc6b;
-    padding: 5px;
-    border-radius: 10px;
+    background-color: #d8d0d0;
     margin-top: 30px;
+    width: 100%;
+    left: 0%;
+    z-index: 1000;
 }
 
-.bottom-text {
-    font-size: 12px;
-    padding: 5px;
+.external-links-main {
+    position: absolute;
+    display: flex;
+    right: 0%;
+    margin-right: 10px;
+}
+
+.external-links {
+    font-size: 11px;
+    padding-right: 10px;
+}
+
+.external-links-color {
+    color: rgba(0, 0, 0, 0.575);
+}
+
+.external-links-color:hover {
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.github-logo {
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.github-logo:hover {
+    background-color: #c4bcbc;
+    transition: background-color 0.5s;
 }
 
 /* XXX Small screens (320px and up) */
@@ -298,6 +324,10 @@ a:hover {
         margin-top: 50px;
     }
 
+    .external-links {
+        font-size: 12px;
+    }
+
 }
 
 /* Large screens (1024px and up) */
@@ -375,10 +405,18 @@ a:hover {
     background-color: #62727b;
 }
 
-.darkbuttonlight {
+.darkbutton-noback {
+    color: white;
+}
+
+.darkbutton-noback:hover {
     background-color: #62727b;
 }
 
-.darkbuttonlight:hover {
-    background-color: #37474f;
+.darklink {
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.darklink:hover {
+    color: rgb(255, 255, 255);
 }

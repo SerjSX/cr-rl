@@ -12,6 +12,9 @@ const customRecoveries = document.getElementById("customrecoveries");
 const backUpButton = document.getElementById("back-up-js");
 const tableChoiceButtonONE = document.getElementById("table-choice-button-one-js");
 const tableChoiceButtonTWO = document.getElementById("table-choice-button-two-js");
+const bottomText = document.getElementById("bottom-info-js");
+const githubLogo = document.getElementById("github-logo-js");
+const externalLinks = document.getElementById("external-links-color-js");
 
 function changeTheme() {
     if (themeState === "light") {
@@ -28,7 +31,11 @@ function changeTheme() {
         backUpButton.setAttribute("src", "media/arrowup/white-24dp/1x/round_arrow_upward_white_24dp.png");
         tableChoiceButtonONE.classList.add("darkbutton");
         tableChoiceButtonTWO.classList.add("darkbutton");
-        document.getElementById("bottom-info-js").style.color = "#ffffff";
+        bottomText.style.backgroundColor = "#555353";
+        githubLogo.setAttribute("src", "media/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png");
+        githubLogo.classList.add("darkbutton-noback");
+        document.getElementById("external-link-1").classList.add("darklink");
+        document.getElementById("external-link-2").classList.add("darklink");
         themeState = "dark";
         localStorage.clear();
         localStorage.setItem("themeState", themeState);
@@ -47,7 +54,11 @@ function changeTheme() {
         backUpButton.setAttribute("src", "media/arrowup/black-24dp/1x/round_arrow_upward_black_24dp.png");
         tableChoiceButtonONE.classList.remove("darkbutton");
         tableChoiceButtonTWO.classList.remove("darkbutton");
-        document.getElementById("bottom-info-js").style.color = "#000000";
+        bottomText.style.backgroundColor = "#d8d0d0";
+        githubLogo.setAttribute("src", "media/GitHub-Mark/PNG/GitHub-Mark-32px.png");
+        githubLogo.classList.remove("darkbutton-noback");
+        document.getElementById("external-link-1").classList.remove("darklink");
+        document.getElementById("external-link-2").classList.remove("darklink");
         themeState = "light";
         localStorage.clear();
         localStorage.setItem("themeState", themeState);
@@ -72,7 +83,11 @@ function savedTheme() {
         backUpButton.setAttribute("src", "media/arrowup/white-24dp/1x/round_arrow_upward_white_24dp.png");
         tableChoiceButtonONE.classList.add("darkbutton");
         tableChoiceButtonTWO.classList.add("darkbutton");
-        document.getElementById("bottom-info-js").style.color = "#ffffff";
+        bottomText.style.backgroundColor = "#555353";
+        githubLogo.setAttribute("src", "media/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png");
+        githubLogo.classList.add("darkbutton-noback");
+        document.getElementById("external-link-1").classList.add("darklink");
+        document.getElementById("external-link-2").classList.add("darklink");
         themeState = "dark";
         localStorage.clear();
         localStorage.setItem("themeState", themeState);
@@ -91,7 +106,11 @@ function savedTheme() {
         backUpButton.setAttribute("src", "media/arrowup/black-24dp/1x/round_arrow_upward_black_24dp.png");
         tableChoiceButtonONE.classList.remove("darkbutton");
         tableChoiceButtonTWO.classList.remove("darkbutton");
-        document.getElementById("bottom-info-js").style.color = "#000000";
+        bottomText.style.backgroundColor = "#d8d0d0";
+        githubLogo.setAttribute("src", "media/GitHub-Mark/PNG/GitHub-Mark-32px.png");
+        githubLogo.classList.remove("darkbutton-noback");
+        document.getElementById("external-link-1").classList.remove("darklink");
+        document.getElementById("external-link-2").classList.remove("darklink");
         themeState = "light";
         localStorage.clear();
         localStorage.setItem("themeState", themeState);
