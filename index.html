@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/searchbar.css">
   <title>CR&RL - Custom ROM & Recovery List</title>
   <link rel="icon" href="media/logo.png" type="image/icon type">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,6 +33,23 @@
   <div class="middle"><div class="table-choice">
     <a href="#customroms"><button class="table-choice-button" id="table-choice-button-one-js">Custom ROMs</button></a>
     <a href="#customrecoveries"><button class="table-choice-button" id="table-choice-button-two-js">Custom Recoveries</button></a>
+  </div></div>
+
+  <div class="middle"><div id="search-section-js" class="searchsection">
+      <div role="search" class="search">
+      <input tabindex="1" id="search-bar-js" class="searchbar" type="search" aria-label="Search text" placeholder="Search..." name="search">
+      <button tabindex="-1" class="searchbutton" id="close-img-js" aria-label="Cancel"><img src="media/close/round_close_black_24dp.png" alt="cancel" class="closeimg globalsearchremove" class="searchbutton" id="closeimg-js" aria-label="Cancel"></button>
+      <button tabindex="2" class="searchbutton" id="search-img-js" aria-label="Search"><img src="media/search/round_search_black_24dp.png" alt="search" id="searchimg-js" class="searchimg"></button>
+    </div>
+      <div class="middle">
+      <div class="borderbetween globalsearchremove"></div>
+      </div>
+      <div class="middle">
+    <ul tabindex="3" class="list globalsearchremove" id="searchbar-content">
+      <li class="noresult">No Result</li>
+    </ul>
+    </div>
+    </div>
   </div></div>
 
 <div class="middle"><div class="tables-main">
@@ -89,9 +107,11 @@
   </div></div>
 
 <script src="javascript/generalignorable.js" defer></script>
+<script src="javascript/searchbar.js" defer></script>
 <script src="javascript/roms.js" defer></script>
 <script src="javascript/recoveries.js" defer></script>
 <script src="javascript/automation.js" defer></script>
+<script src="javascript/themechange.js" defer></script>
 
 </body>
 

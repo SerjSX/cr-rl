@@ -23,6 +23,7 @@ Recoveries.sort(function (a, b) {
 
   for (let i = 0; i < ROMs.length; i++) {
     const romTable = document.getElementById("append-here-roms");
+    const searchbarContent = document.getElementById("searchbar-content");
 
     const romName = ROMs[i]["name"];
     const romRating = ROMs[i]["rating"];
@@ -31,6 +32,7 @@ Recoveries.sort(function (a, b) {
     const romSourceCode = ROMs[i]["source_code"];
 
     const createMain = document.createElement("tr");
+    createMain.setAttribute("id", romName.toLowerCase());
     romTable.appendChild(createMain);
 
     const createName = document.createElement("td");
@@ -88,13 +90,28 @@ Recoveries.sort(function (a, b) {
     createLinks.appendChild(createLinksSourceCode);
     }
 
+    const addToSearch = document.createElement("li");
+    const addToSearchLinkWrap = document.createElement("a")
+
+    addToSearch.setAttribute("class", "section");
+    addToSearch.setAttribute("id", "section-js");
+    addToSearch.setAttribute("role", "option");
+    addToSearch.textContent = romName;
+
+    addToSearchLinkWrap.setAttribute("href", "#" + romName.toLowerCase());
+    addToSearchLinkWrap.setAttribute("class", "exception");
+
+    searchbarContent.appendChild(addToSearchLinkWrap);
+    addToSearchLinkWrap.appendChild(addToSearch);
+
     romsHeading.textContent = "Custom ROMs";
 }
 
-  
+
 
   for (let i = 0; i < Recoveries.length; i++) {
     const recoveryTable = document.getElementById("append-here-recoveries");
+    const searchbarContent = document.getElementById("searchbar-content");
 
     const recoveryName = Recoveries[i]["name"];
     const recoveryRating = Recoveries[i]["rating"];
@@ -103,6 +120,7 @@ Recoveries.sort(function (a, b) {
     const recoverySourceCode = Recoveries[i]["source_code"];
 
     const createMain = document.createElement("tr");
+    createMain.setAttribute("id", recoveryName.toLowerCase());
     recoveryTable.appendChild(createMain);
 
     const createName = document.createElement("td");
@@ -159,6 +177,20 @@ Recoveries.sort(function (a, b) {
     createLinksSourceCode.textContent = "Source Code";
     createLinks.appendChild(createLinksSourceCode);
     }
+
+    const addToSearch = document.createElement("li");
+    const addToSearchLinkWrap = document.createElement("a")
+
+    addToSearch.setAttribute("class", "section");
+    addToSearch.setAttribute("id", "section-js");
+    addToSearch.setAttribute("role", "option");
+    addToSearch.textContent = recoveryName;
+
+    addToSearchLinkWrap.setAttribute("href", "#" + recoveryName.toLowerCase());
+    addToSearchLinkWrap.setAttribute("class", "exception");
+
+    searchbarContent.appendChild(addToSearchLinkWrap);
+    addToSearchLinkWrap.appendChild(addToSearch);
 
     recoveriesHeading.textContent = "Custom Recoveries";
 }

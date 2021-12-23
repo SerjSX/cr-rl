@@ -333,11 +333,11 @@ a:hover {
 /* Large screens (1024px and up) */
 @media only screen and (min-width: 1024px) {
     .welcome {
-        width: 450px; 
+        width: 450px;
     }
 
     .nolink {
-        width: 450px; 
+        width: 450px;
     }
 
     .toptext {
@@ -346,7 +346,7 @@ a:hover {
 
     .tables-main {
         flex-direction: row;
-        margin-top: 450px;
+        margin-top: 75px;
     }
 
     .tables {
@@ -380,7 +380,7 @@ a:hover {
         width: 500px;
     }
 }
- 
+
 /* XXX Large screens (2560px and up) */
 @media only screen and (min-width: 2560px) {
     .welcome {
