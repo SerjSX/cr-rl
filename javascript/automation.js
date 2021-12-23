@@ -36,7 +36,13 @@ Recoveries.sort(function (a, b) {
     const createName = document.createElement("td");
     createName.classList.add("table-content", "table-content-first", "table-inputs")
     createName.setAttribute("id", romName.toLowerCase() + "_name");
-    createName.textContent = romName;
+    if (romRating > 8) {
+    createName.textContent = romName + " " + "-" + " " + "🌟";
+    } else if (romRating > 6) {
+        createName.textContent = romName + " " + "-" + " " + "⭐";
+    } else {
+        createName.textContent = romName;
+    }
     createMain.appendChild(createName);
 
     const createRating = document.createElement("td");
@@ -102,7 +108,13 @@ Recoveries.sort(function (a, b) {
     const createName = document.createElement("td");
     createName.classList.add("table-content", "table-content-first", "table-inputs")
     createName.setAttribute("id", recoveryName.toLowerCase() + "_name");
-    createName.textContent = recoveryName;
+    if (recoveryRating > 8) {
+        createName.textContent = recoveryName + " " + "-" + " " + "🌟";
+        } else if (recoveryRating > 6) {
+            createName.textContent = recoveryName + " " + "-" + " " + "⭐";
+        } else {
+            createName.textContent = recoveryName;
+        }
     createMain.appendChild(createName);
 
     const createRating = document.createElement("td");
